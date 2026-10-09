@@ -1,0 +1,850 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Dr. Neetesh Soni | Materials &amp; Process Engineer</title>
+<meta name="description" content="Dr. Neetesh Soni, materials and process engineer in Italy. Research and industry work in metal additive manufacturing (SLM), Ti6Al4V, 17-4 PH, corrosion, friction stir welding and incremental forming. MDPI Metals Best Paper Award.">
+<meta name="author" content="Neetesh Soni">
+<link rel="canonical" href="https://ntnsoni7.github.io/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Dr. Neetesh Soni | Materials &amp; Process Engineer">
+<meta property="og:description" content="Dr. Neetesh Soni, materials and process engineer in Italy. Research and industry work in metal additive manufacturing (SLM), Ti6Al4V, 17-4 PH, corrosion, friction stir welding and incremental forming. MDPI Metals Best Paper Award.">
+<meta property="og:url" content="https://ntnsoni7.github.io/">
+<meta property="og:image" content="https://ntnsoni7.github.io/photo.jpg">
+<meta name="twitter:card" content="summary">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "Neetesh Soni", "honorificPrefix": "Dr.", "jobTitle": "Materials and Process Engineer", "url": "https://ntnsoni7.github.io/", "image": "https://ntnsoni7.github.io/photo.jpg", "email": "mailto:ntnsoni7@gmail.com", "address": {"@type": "PostalAddress", "addressCountry": "IT"}, "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Università del Salento"}, {"@type": "CollegeOrUniversity", "name": "National Institute of Technology Warangal"}, {"@type": "CollegeOrUniversity", "name": "Maharshi Dayanand University"}], "knowsAbout": ["Additive manufacturing", "Selective laser melting", "Ti6Al4V", "17-4 PH stainless steel", "Corrosion", "Friction stir welding", "Single point incremental forming", "Materials characterization", "Mechanical engineering"], "award": "Best Paper Award, Metals (MDPI)", "sameAs": ["https://www.linkedin.com/in/neetesh-soni-67b48223/", "https://scholar.google.com/citations?user=960sfJUAAAAJ", "https://github.com/ntnsoni7", "https://www.unisalento.it/people/neetesh.soni"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..100,500..800&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: navy hero band with a drawing-style title block, then alternating white / light-steel sections on a 1080px column. Steel blue for interaction, copper for markers. */
+:root{
+  --bg:#F5F7FA; --surface:#FFFFFF; --surface-2:#EDF1F6; --line:#DCE3EB;
+  --fg:#14233A; --muted:#566476; --accent:#1D4E89; --accent-ink:#FFFFFF; --copper:#A85B2A;
+  --hero:#102A43; --hero-fg:#F0F4F8; --hero-muted:#A7B9CC; --hero-line:#2A4562;
+  --display:"Archivo","Arial Narrow",Arial,sans-serif;
+  --body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0D1622; --surface:#131F2E; --surface-2:#192737; --line:#26364A;
+  --fg:#E5EBF2; --muted:#9AA9BA; --accent:#82B4E8; --accent-ink:#0D1622; --copper:#D99062;
+  --hero:#09111B; --hero-fg:#EEF3F8; --hero-muted:#93A7BC; --hero-line:#22364D; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0D1622; --surface:#131F2E; --surface-2:#192737; --line:#26364A;
+  --fg:#E5EBF2; --muted:#9AA9BA; --accent:#82B4E8; --accent-ink:#0D1622; --copper:#D99062;
+  --hero:#09111B; --hero-fg:#EEF3F8; --hero-muted:#93A7BC; --hero-line:#22364D; color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{transition:none!important}}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.65;margin:0}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible,select:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding-inline:20px}
+.mono{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.sr{position:absolute;left:-9999px}
+
+/* Header */
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--surface);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:16px;height:60px}
+.brand{font-family:var(--display);font-weight:800;font-stretch:88%;font-size:19px;letter-spacing:.03em;color:var(--fg);text-decoration:none;white-space:nowrap}
+.brand span{color:var(--copper)}
+nav{flex:1;min-width:0;overflow-x:auto;scrollbar-width:none}
+nav::-webkit-scrollbar{display:none}
+nav ul{display:flex;gap:2px;list-style:none;margin:0;padding:0}
+nav a{display:block;padding:6px 10px;font-size:14px;font-weight:600;color:var(--muted);text-decoration:none;white-space:nowrap;border-radius:6px}
+nav a:hover{color:var(--fg);background:var(--surface-2)}
+.controls{display:flex;gap:8px;align-items:center}
+select,.iconbtn{font:500 13px var(--body);background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:6px;height:34px;padding:0 8px;cursor:pointer}
+.iconbtn{width:34px;padding:0;display:grid;place-items:center}
+.iconbtn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2}
+@media (max-width:860px){.bar{flex-wrap:wrap;height:auto;padding-block:10px;gap:10px}.brand{flex:1}nav{order:3;flex-basis:100%}}
+
+/* Hero */
+.hero{background:var(--hero);color:var(--hero-fg)}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:56px;padding-block:72px 76px;align-items:center}
+.hero .eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--hero-muted);display:flex;align-items:center;gap:10px}
+.hero .eyebrow::before{content:"";width:28px;height:2px;background:var(--copper)}
+.hero h1{font-family:var(--display);font-weight:800;font-stretch:84%;font-size:clamp(44px,7.4vw,80px);line-height:.98;margin:16px 0 14px;letter-spacing:-.005em;text-wrap:balance}
+.role{font-family:var(--display);font-stretch:92%;font-weight:600;font-size:clamp(18px,2.3vw,23px);margin:0 0 18px;color:var(--hero-fg);text-wrap:balance}
+.lead{color:var(--hero-muted);max-width:56ch;margin:0 0 30px;font-size:17px}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:700;font-size:15px;padding:12px 20px;border-radius:6px;text-decoration:none;border:1px solid transparent;cursor:pointer;font-family:var(--body)}
+.btn.primary{background:var(--hero-fg);color:var(--hero)}
+.btn.ghost{color:var(--hero-fg);border-color:var(--hero-line)}
+.btn:hover{filter:brightness(1.06)}
+
+/* Title block */
+.sheet{background:var(--surface);color:var(--fg);border:1px solid var(--line);border-radius:4px;font-family:var(--mono);font-size:12px;box-shadow:0 18px 40px rgba(4,12,24,.28)}
+.sheet .photo{display:grid;grid-template-columns:auto 1fr;border-bottom:1px solid var(--line)}
+.sheet img{width:128px;height:128px;object-fit:cover;display:block;border-right:1px solid var(--line);border-radius:4px 0 0 0}
+.sheet .ident{padding:12px 16px;display:flex;flex-direction:column;justify-content:center;gap:6px;min-width:0}
+.sheet .ident b{font-family:var(--display);font-stretch:88%;font-size:22px;font-weight:800;color:var(--fg);line-height:1.1}
+.sheet dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin:0}
+.sheet dl div{padding:10px 14px;border-bottom:1px solid var(--line);min-width:0}
+.sheet dl div:nth-child(odd){border-right:1px solid var(--line)}
+.sheet dl div:nth-last-child(-n+2){border-bottom:0}
+.sheet dt{font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.sheet dd{margin:3px 0 0;color:var(--fg);font-size:12.5px;line-height:1.45;overflow-wrap:anywhere}
+@media (max-width:860px){.hero .wrap{grid-template-columns:1fr;gap:36px;padding-block:48px 56px}}
+@media (max-width:420px){.sheet img{width:96px;height:96px}.sheet dl{grid-template-columns:1fr}.sheet dl div:nth-child(odd){border-right:0}.sheet dl div:nth-last-child(2){border-bottom:1px solid var(--line)}}
+
+/* Sections */
+section{padding-block:76px;border-bottom:1px solid var(--line)}
+section.alt{background:var(--surface)}
+.sec-head{margin-bottom:30px}
+.sec-head::before{content:"";display:block;width:36px;height:3px;background:var(--copper);margin-bottom:14px}
+.sec-head h2{font-family:var(--display);font-stretch:88%;font-weight:800;font-size:clamp(28px,4vw,38px);line-height:1.1;margin:0;text-wrap:balance}
+.sub{color:var(--muted);margin:-16px 0 26px;max-width:65ch}
+.subhead{font-family:var(--display);font-stretch:92%;font-size:21px;font-weight:700;margin:0 0 6px}
+.subnote{color:var(--muted);margin:0 0 16px;font-size:15px}
+
+.about{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:48px}
+.about p{margin:0 0 16px;max-width:65ch}
+.langs{display:grid;align-content:start}
+.langs .mono{margin-bottom:6px}
+.langrow{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:15px}
+.langrow span:last-child{font-family:var(--mono);color:var(--accent);font-size:13px}
+@media (max-width:760px){.about{grid-template-columns:1fr}}
+.pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:36px}
+.pillar{border-top:2px solid var(--fg);padding-top:16px}
+.pillar h3{font-family:var(--display);font-stretch:92%;font-size:19px;margin:0 0 6px}
+.pillar p{margin:0;color:var(--muted);font-size:15px}
+@media (max-width:760px){.pillars{grid-template-columns:1fr}}
+
+/* Materials */
+.matgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:4px;overflow:hidden;margin-bottom:40px}
+.matfam{background:var(--surface);padding:16px 18px;min-width:0}
+.matfam h4{margin:0 0 10px;font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.matfam div{display:flex;flex-wrap:wrap;gap:6px}
+.matfam span{font-family:var(--mono);font-size:13.5px;font-weight:500;color:var(--fg);padding:3px 9px;border:1px solid var(--fg);border-radius:3px}
+
+/* Skills */
+.skills{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.skillcat{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:20px}
+.skillcat h3{font-size:15.5px;margin:0 0 14px;font-weight:700}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{font-size:13.5px;font-weight:600;padding:4px 11px;border-radius:999px;line-height:1.45}
+.chip.core{background:var(--surface-2);color:var(--fg);border:1px solid var(--line)}
+.chip.explore{border:1px dashed var(--muted);color:var(--muted)}
+.legend{display:flex;gap:18px;margin:0 0 18px;flex-wrap:wrap}
+.legend span{display:inline-flex;align-items:center;gap:8px;font-size:13px;color:var(--muted)}
+.legend i{width:22px;height:12px;border-radius:999px;display:inline-block}
+.legend i.core{background:var(--surface-2);border:1px solid var(--line)}
+.legend i.explore{border:1px dashed var(--muted)}
+@media (max-width:760px){.skills{grid-template-columns:1fr}}
+
+/* Publications */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.filters button{font:600 13.5px var(--body);background:var(--surface);color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:7px 14px;cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.filters button .n{font-family:var(--mono);font-size:11px;margin-left:6px;opacity:.75}
+.pubs{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.pub{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;padding:15px 0;border-bottom:1px solid var(--line)}
+.pub .yr{font-family:var(--mono);color:var(--copper);font-size:14px;padding-top:2px;font-variant-numeric:tabular-nums}
+.pub .t{font-weight:600;line-height:1.45}
+.pub .v{font-style:italic;color:var(--muted);font-size:14px;margin-top:3px}
+.pub .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.pub .tags span{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--muted);text-transform:uppercase}
+.pub .tags span+span::before{content:"· "}
+.morelink{display:inline-block;margin-top:18px;font-weight:600}
+.pub .t a{color:var(--fg);text-decoration-color:var(--line);text-underline-offset:3px}
+.pub .t a:hover{color:var(--accent)}
+.pub .award{display:inline-block;margin-top:6px;font:600 12px var(--body);color:var(--copper);border:1px solid var(--copper);border-radius:3px;padding:2px 8px}
+
+/* Timeline */
+.timeline{list-style:none;margin:0;padding:0;position:relative}
+.timeline::before{content:"";position:absolute;left:5px;top:8px;bottom:8px;width:1px;background:var(--line)}
+.tl{position:relative;padding:0 0 30px 32px}
+.tl:last-child{padding-bottom:0}
+.tl::before{content:"";position:absolute;left:0;top:8px;width:11px;height:11px;border-radius:50%;background:var(--bg);border:2px solid var(--copper)}
+section.alt .tl::before{background:var(--surface)}
+.tl .when{font-family:var(--mono);font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.tl h3{font-family:var(--display);font-stretch:92%;font-size:20px;margin:2px 0 0;line-height:1.25}
+.tl .org{color:var(--accent);font-weight:600;font-size:15px;margin:2px 0 8px}
+.tl p{margin:0;max-width:70ch}
+.tl .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tl .tags span{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:2px 7px}
+
+/* Projects */
+.indgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-bottom:48px}
+.indcol{border-top:2px solid var(--fg);padding-top:14px;min-width:0}
+.indcol h4{margin:0 0 4px;font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--copper)}
+.indcol ul{list-style:none;margin:0;padding:0}
+.indcol li{padding:12px 0;border-bottom:1px solid var(--line);font-weight:600;line-height:1.45;font-size:15px}
+.indcol li small{display:block;margin-top:4px;font:500 11px var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:860px){.indgrid{grid-template-columns:1fr}}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:22px;display:flex;flex-direction:column;gap:6px}
+section.alt .card{background:var(--bg)}
+.card h3{font-family:var(--display);font-stretch:92%;font-size:19px;line-height:1.25;margin:0}
+.card p{margin:2px 0 0;font-size:15px;color:var(--muted)}
+.card .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:10px}
+.card .tags span{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);border:1px solid var(--line);border-radius:3px;padding:2px 7px}
+@media (max-width:760px){.cards{grid-template-columns:1fr}}
+
+/* Lists (recognition, certifications) */
+.twocol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 56px}
+.twocol h3{font:500 12px var(--mono);text-transform:uppercase;letter-spacing:.1em;color:var(--copper);margin:0 0 10px}
+.stack{display:grid;gap:40px;align-content:start}
+.rlist{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.rlist li{display:grid;grid-template-columns:76px minmax(0,1fr);gap:12px;padding:11px 0;border-bottom:1px solid var(--line);font-size:15px}
+.rlist .y{font-family:var(--mono);font-size:12.5px;color:var(--muted);padding-top:2px;font-variant-numeric:tabular-nums}
+.rlist small{display:block;color:var(--muted);font-size:13.5px;margin-top:2px}
+@media (max-width:760px){.twocol{grid-template-columns:1fr}}
+
+/* Contact */
+.contact{border-bottom:0}
+.contact-box{background:var(--hero);color:var(--hero-fg);border-radius:8px;padding:40px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:44px;align-items:start}
+.contact-box h2{font-family:var(--display);font-stretch:88%;font-weight:800;font-size:clamp(26px,3.6vw,34px);margin:0 0 10px}
+.contact-box p{margin:0;color:var(--hero-muted);max-width:50ch}
+.clist{display:grid;gap:10px}
+.crow{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 14px;border:1px solid var(--hero-line);border-radius:6px}
+.crow .lbl{font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--hero-muted);min-width:76px}
+.crow code{font-family:var(--mono);font-size:14px;user-select:all;overflow-wrap:anywhere;flex:1;min-width:0;color:var(--hero-fg)}
+.crow a{font-weight:600;flex:1;min-width:0;overflow-wrap:anywhere;color:var(--hero-fg)}
+.copy{font:600 12px var(--body);background:transparent;color:var(--hero-fg);border:1px solid var(--hero-line);border-radius:5px;padding:5px 10px;cursor:pointer}
+@media (max-width:760px){.contact-box{grid-template-columns:1fr;padding:24px}}
+.social{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.social a{display:inline-flex;align-items:center;gap:8px;height:40px;padding:0 13px;border:1px solid var(--hero-line);border-radius:6px;color:var(--hero-fg);text-decoration:none;font-weight:600;font-size:14px}
+.social.icons a{width:42px;height:42px;padding:0;justify-content:center}
+.social a:hover{background:rgba(255,255,255,.08)}
+.social svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;flex:none}
+.direct{margin-top:22px}
+.direct .lbl{display:block;margin-bottom:8px}
+#cform{display:grid;gap:14px;min-width:0}
+.frow{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.field{display:grid;gap:6px;min-width:0}
+.field label{font:500 11px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--hero-muted)}
+.field input,.field textarea{font:500 15px var(--body);color:var(--hero-fg);background:rgba(255,255,255,.05);border:1px solid var(--hero-line);border-radius:6px;padding:11px 12px;width:100%;min-width:0}
+.field textarea{resize:vertical;min-height:130px;line-height:1.5}
+.field input:focus,.field textarea:focus{outline:2px solid var(--hero-muted);outline-offset:1px}
+#cform .btn{justify-self:start}
+#cform .btn[disabled]{opacity:.6;cursor:wait}
+.status{margin:0;font-size:14px;min-height:1.4em;color:var(--hero-muted)}
+.status[data-state="ok"]{color:#8FD6AC}
+.status[data-state="err"]{color:#F4B0A6}
+@media (max-width:520px){.frow{grid-template-columns:1fr}}
+footer{padding-block:26px;color:var(--muted);font-size:13px;border-top:1px solid var(--line)}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#top">NEETESH SONI<span>.</span></a>
+    <nav aria-label="Sections"><ul>
+      <li><a href="#about" data-i18n="nav_about">About</a></li>
+      <li><a href="#skills" data-i18n="nav_skills">Skills</a></li>
+      <li><a href="#experience" data-i18n="nav_journey">Experience</a></li>
+      <li><a href="#projects" data-i18n="nav_proj">Projects</a></li>
+      <li><a href="#publications" data-i18n="nav_pubs">Publications</a></li>
+      <li><a href="#education" data-i18n="nav_edu">Education</a></li>
+      <li><a href="#certifications" data-i18n="nav_cert">Certifications</a></li>
+      <li><a href="#recognition" data-i18n="nav_recog">Recognition</a></li>
+      <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+    </ul></nav>
+    <div class="controls">
+      <label for="lang" class="sr" data-i18n="lang_label">Language</label>
+      <select id="lang">
+        <option value="en">EN · English</option>
+        <option value="it">IT · Italiano</option>
+        <option value="fr">FR · Français</option>
+        <option value="es">ES · Español</option>
+        <option value="de">DE · Deutsch</option>
+      </select>
+      <button class="iconbtn" id="theme" type="button" aria-label="Switch theme"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow" data-i18n="eyebrow">Portfolio &amp; Research</div>
+      <h1>Dr. Neetesh Soni</h1>
+      <p class="role" data-i18n="role">Aerospace, Mechanical &amp; Materials Engineer</p>
+      <p class="lead" data-i18n="lead"></p>
+      <div class="ctas">
+        <a class="btn primary" href="#experience" data-i18n="cta_exp">View experience</a>
+        <a class="btn ghost" href="#contact" data-i18n="cta_contact">Get in touch</a>
+      </div>
+      <div class="social icons" id="social-hero"></div>
+    </div>
+    <div class="sheet" aria-label="Profile summary">
+      <div class="photo">
+        <img src="data:image/jpeg;base64,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" alt="Portrait of Dr. Neetesh Soni" width="128" height="128">
+        <div class="ident">
+          <span class="mono" data-i18n="tb_title">Engineer · Researcher</span>
+          <b>Neetesh Soni</b>
+          <span class="mono">PhD · M.Tech · B.Tech</span>
+        </div>
+      </div>
+      <dl>
+        <div><dt data-i18n="tb_based">Based in</dt><dd data-i18n="tb_based_v">Italy</dd></div>
+        <div><dt data-i18n="tb_phd">Doctorate</dt><dd>Università del Salento</dd></div>
+        <div><dt data-i18n="tb_focus">Focus</dt><dd data-i18n="tb_focus_v"></dd></div>
+        <div><dt data-i18n="tb_materials">Materials</dt><dd>Ti6Al4V · 17-4 PH · AlSi10Mg · H13 · Al6061</dd></div>
+      </dl>
+    </div>
+  </div>
+</div>
+
+<section id="about" class="alt"><div class="wrap">
+  <div class="sec-head"><h2 data-i18n="about_t">About</h2></div>
+  <div class="about">
+    <div><p data-i18n="about_p1"></p><p data-i18n="about_p2"></p></div>
+    <div class="langs" id="langs"></div>
+  </div>
+  <div class="pillars">
+    <div class="pillar"><h3 data-i18n="p1t"></h3><p data-i18n="p1d"></p></div>
+    <div class="pillar"><h3 data-i18n="p2t"></h3><p data-i18n="p2d"></p></div>
+    <div class="pillar"><h3 data-i18n="p3t"></h3><p data-i18n="p3d"></p></div>
+  </div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+  <div class="sec-head"><h2 data-i18n="skills_t">Technical arsenal</h2></div>
+  <h3 class="subhead" data-i18n="mat_t">Materials expertise</h3>
+  <p class="subnote" data-i18n="mat_sub"></p>
+  <div class="matgrid" id="matgrid"></div>
+  <h3 class="subhead" data-i18n="tools_t">Tools &amp; methods</h3>
+  <div class="legend"><span><i class="core"></i><b data-i18n="legend_core">Core skill</b></span><span><i class="explore"></i><b data-i18n="legend_explore">Currently developing</b></span></div>
+  <div class="skills" id="skillgrid"></div>
+</div></section>
+
+<section id="experience" class="alt"><div class="wrap">
+  <div class="sec-head"><h2 data-i18n="journey_t">Professional journey</h2></div>
+  <ol class="timeline" id="timeline"></ol>
+</div></section>
+
+<section id="projects"><div class="wrap">
+  <div class="sec-head"><h2 data-i18n="proj_t">Selected projects</h2></div>
+  <h3 class="subhead" data-i18n="proj_ind">Industrial projects</h3>
+  <p class="subnote" data-i18n="proj_ind_sub"></p>
+  <div class="indgrid" id="indproj"></div>
+  <h3 class="subhead" data-i18n="proj_res">Research projects</h3>
+  <p class="subnote"></p>
+  <div class="cards" id="proj"></div>
+</div></section>
+
+<section id="publications" class="alt"><div class="wrap">
+  <div class="sec-head"><h2 data-i18n="pubs_t">Publications</h2></div>
+  <p class="sub" data-i18n="pubs_sub"></p>
+  <div class="filters" id="filters" role="group" aria-label="Filter publications"></div>
+  <ul class="pubs" id="pubs"></ul>
+  <h3 class="subhead" style="margin-top:32px" data-i18n="prep_t">In preparation</h3>
+  <ul class="pubs" id="prep"></ul>
+  <div style="display:flex;flex-wrap:wrap;gap:8px 24px"><a class="morelink" href="https://scholar.google.com/citations?user=960sfJUAAAAJ" target="_blank" rel="noopener">Google Scholar</a><a class="morelink" href="https://iris.unisalento.it/cris/rp/rp20579" target="_blank" rel="noopener">IRIS · Università del Salento</a></div>
+</div></section>
+
+<section id="education"><div class="wrap">
+  <div class="sec-head"><h2 data-i18n="edu_t">Education</h2></div>
+  <ol class="timeline" id="edu"></ol>
+  <div style="margin-top:40px;max-width:620px"><h3 class="subhead" data-i18n="tests_t">Language &amp; admission tests</h3><ul class="rlist" id="tests"></ul></div>
+</div></section>
+
+<section id="certifications" class="alt"><div class="wrap">
+  <div class="sec-head"><h2 data-i18n="certsec_t">Certifications &amp; training</h2></div>
+  <div class="twocol">
+    <div><h3 data-i18n="cert_t">Certifications</h3><ul class="rlist" id="certs"></ul></div>
+    <div><h3 data-i18n="ws_t">Workshops &amp; courses</h3><ul class="rlist" id="workshops"></ul></div>
+  </div>
+</div></section>
+
+<section id="recognition"><div class="wrap">
+  <div class="sec-head"><h2 data-i18n="recog_t">Recognition</h2></div>
+  <div class="twocol">
+    <div><h3 data-i18n="awards_t">Honours &amp; awards</h3><ul class="rlist" id="awards"></ul></div>
+    <div class="stack">
+      <div><h3 data-i18n="rev_t">Peer review</h3><ul class="rlist" id="revs"></ul></div>
+      <div><h3 data-i18n="pat_t">Patent &amp; copyright</h3><ul class="rlist" id="patents"></ul></div>
+      <div><h3 data-i18n="conf_t">Conferences &amp; talks</h3><ul class="rlist" id="confs"></ul></div>
+      <div><h3 data-i18n="mem_t">Memberships &amp; volunteering</h3><ul class="rlist" id="mems"></ul></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+  <div class="contact-box">
+    <div>
+      <h2 data-i18n="contact_t">Get in touch</h2>
+      <p data-i18n="contact_p"></p>
+      <div class="direct"><span class="lbl mono" style="color:var(--hero-muted)" data-i18n="cf_direct">Or write directly</span>
+        <div class="crow"><code id="email">ntnsoni7@gmail.com</code><button class="copy" type="button" id="copybtn" data-i18n="copy">Copy</button></div></div>
+      <div class="social" id="social-contact"></div>
+    </div>
+    <form id="cform" novalidate>
+      <div class="frow">
+        <div class="field"><label for="cf-name" data-i18n="cf_name">Name</label><input id="cf-name" name="name" autocomplete="name"></div>
+        <div class="field"><label for="cf-email" data-i18n="cf_email">Your email</label><input id="cf-email" name="email" type="email" autocomplete="email" required></div>
+      </div>
+      <div class="field"><label for="cf-subject" data-i18n="cf_subject">Subject</label><input id="cf-subject" name="subject"></div>
+      <div class="field"><label for="cf-message" data-i18n="cf_message">Message</label><textarea id="cf-message" name="message" rows="6" required></textarea></div>
+      <input type="text" id="cf-honey" name="_honey" class="sr" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <button class="btn primary" type="submit" id="cf-send" data-i18n="cf_send">Send message</button>
+      <p class="status" id="cf-status" role="status"></p>
+    </form>
+  </div>
+</div></section>
+</main>
+<footer><div class="wrap"><span>© 2026 Neetesh Soni</span><span data-i18n="footer_r">Italy</span></div></footer>
+
+<script>
+const LANGS=["en","it","fr","es","de"];
+const T={
+en:{nav_about:"About",nav_skills:"Skills",nav_pubs:"Publications",nav_journey:"Experience",nav_edu:"Education",nav_proj:"Projects",nav_recog:"Recognition",nav_contact:"Contact",lang_label:"Language",theme:"Switch theme",
+eyebrow:"Portfolio & Research",role:"Aerospace, Mechanical & Materials Engineer",
+lead:"I'm a materials and process engineer based in Italy. For more than ten years I have worked on how metal parts are made, joined and tested, in research labs and on the factory floor.",
+cta_pubs:"View publications",cta_contact:"Get in touch",tb_title:"Engineer · Researcher",tb_based:"Based in",tb_based_v:"Italy",tb_phd:"Doctorate",tb_focus:"Focus",tb_focus_v:"Additive manufacturing · SPIF · Corrosion",tb_materials:"Materials",tb_sheet:"Sheet 01 of 01",
+about_t:"About",
+about_p1:"My background is in mechanical engineering and materials technology, and I completed my PhD at the Università del Salento. Most of my research has been on metal additive manufacturing: printing parts in titanium, aluminium and stainless steel on powder-bed machines, then improving them through heat treatment and surface finishing. Before that I worked on incremental sheet forming, friction stir welding and corrosion protection. My review of selective laser melting received the Best Paper Award from the journal Metals (MDPI).",
+about_p2:"I have worked in India, China, Sweden, Spain and Italy, in universities and in industry. Most recently I was a plant engineer at Meccanica Meridionale, where I looked after the technical office, design and quality on components for customers such as Komatsu and CNH. I also review papers for materials and manufacturing journals published by MDPI, Springer, Elsevier and Wiley.",
+p1t:"Advanced materials",p1d:"Titanium, aluminium, stainless and tool steels. I study their microstructure, strength and corrosion with SEM, XRD, Micro-CT and NDT.",
+p2t:"Manufacturing & design",p2d:"Metal 3D printing, sheet forming, welding and CNC machining, from the first drawing to a part that passes inspection.",
+p3t:"Digital engineering",p3d:"Python, MATLAB and Origin for data and simulation. I also build web tools and I'm learning how AI can speed up materials work.",
+skills_t:"Technical arsenal",legend_core:"Core skill",legend_explore:"Currently developing",
+cat_cad:"CAD & engineering design",cat_mat:"Materials & manufacturing",cat_comp:"Computing & data",cat_web:"Web & digital",cat_char:"Characterisation & testing",cat_qual:"Quality & standards",cf_name:"Name",cf_email:"Your email",cf_subject:"Subject",cf_message:"Message",cf_send:"Send message",cf_sending:"Sending…",cf_sent:"Thank you, your message has been sent. I'll reply as soon as I can.",cf_err:"The message could not be sent from this page. Please email ntnsoni7@gmail.com directly.",cf_invalid:"Please enter your email address and a message.",cf_direct:"Or write directly",prep_t:"In preparation",prep_l:"In prep.",tests_t:"Language & admission tests",pat_t:"Patent & copyright",pat_main:"Indian patent application 202111023393",copy_main:"Copyright, literary work (L-97813/2020)",hsk:"HSK 2",nav_cert:"Certifications",cta_exp:"View experience",certsec_t:"Certifications & training",ws_t:"Workshops & courses",award_badge:"Best Paper Award · Metals (MDPI)",mdpi_award:"Best Paper Award, Metals journal (MDPI)",mdpi_sub:"For the review “Advancements in Metal Processing Additive Technologies: Selective Laser Melting (SLM)”, Metals 14(9), 1081",ta_note:"",mat_t:"Materials expertise",mat_sub:"Materials I have worked with hands-on, in production or in the lab.",tools_t:"Tools & methods",rev_t:"Peer review",rev_main:"Reviewer for journals in materials and manufacturing",proj_ind:"Industrial projects · Meccanica Meridionale",proj_ind_sub:"Improvement projects I completed in 2026 as plant engineer.",proj_res:"Research & earlier projects",g_design:"Design & production engineering",g_digital:"Digitalisation & inventory",g_quality:"Quality, audit & business",
+pubs_t:"Publications",pubs_sub:"{n} journal papers, reviews and book chapters, 2017 to 2026.",
+f_all:"All",f_am:"Additive manufacturing",f_corr:"Corrosion",f_weld:"Welding",f_sus:"Sustainability & composites",
+journey_t:"Professional journey",edu_t:"Education",proj_t:"Selected projects",recog_t:"Recognition",
+awards_t:"Honours & awards",conf_t:"Conferences & talks",cert_t:"Certifications",mem_t:"Memberships & volunteering",
+contact_t:"Get in touch",contact_p:"If you're working on a materials or manufacturing problem, or looking for an engineer who is just as comfortable in the lab as on the shop floor, I'd be glad to hear from you.",
+email_l:"Email",uni_l:"University",copy:"Copy",copied:"Copied",footer_r:"Italy · Europe",
+lang_names:["English","Italian","Hindi","Urdu","Punjabi","Chinese","Spanish"],native:"Native",langs_h:"Languages"},
+it:{nav_about:"Profilo",nav_skills:"Competenze",nav_pubs:"Pubblicazioni",nav_journey:"Esperienza",nav_edu:"Formazione",nav_proj:"Progetti",nav_recog:"Riconoscimenti",nav_contact:"Contatti",lang_label:"Lingua",theme:"Cambia tema",
+eyebrow:"Portfolio e ricerca",role:"Ingegnere aerospaziale, meccanico e dei materiali",
+lead:"Sono un ingegnere dei materiali e di processo con base in Italia. Da oltre dieci anni mi occupo di come i componenti metallici vengono prodotti, uniti e controllati, sia in laboratorio sia in produzione.",
+cta_pubs:"Vedi le pubblicazioni",cta_contact:"Contattami",tb_title:"Ingegnere · Ricercatore",tb_based:"Sede",tb_based_v:"Italia",tb_phd:"Dottorato",tb_focus:"Ambiti",tb_focus_v:"Manifattura additiva · SPIF · Corrosione",tb_materials:"Materiali",tb_sheet:"Foglio 01 di 01",
+about_t:"Profilo",
+about_p1:"Ho una formazione in ingegneria meccanica e tecnologia dei materiali e ho conseguito il dottorato all'Università del Salento. La mia ricerca si è concentrata soprattutto sulla manifattura additiva dei metalli: stampa di componenti in titanio, alluminio e acciaio inossidabile su macchine a letto di polvere, seguita da trattamenti termici e finitura superficiale. In precedenza mi sono occupato di formatura incrementale della lamiera, saldatura per attrito (FSW) e protezione dalla corrosione. La mia review sulla fusione laser selettiva ha ricevuto il Best Paper Award della rivista Metals (MDPI).",
+about_p2:"Ho lavorato in India, Cina, Svezia, Spagna e Italia, sia in università sia in azienda. Più di recente sono stato ingegnere di stabilimento presso Meccanica Meridionale, dove ho seguito ufficio tecnico, progettazione e qualità su componenti per clienti come Komatsu e CNH. Sono inoltre revisore di articoli per riviste di materiali e manifattura pubblicate da MDPI, Springer, Elsevier e Wiley.",
+p1t:"Materiali avanzati",p1d:"Titanio, alluminio, acciai inossidabili e per utensili. Ne studio microstruttura, resistenza e corrosione con SEM, XRD, Micro-CT e controlli non distruttivi.",
+p2t:"Produzione e progettazione",p2d:"Stampa 3D dei metalli, formatura della lamiera, saldatura e lavorazioni CNC, dal primo disegno fino al pezzo che supera il collaudo.",
+p3t:"Ingegneria digitale",p3d:"Python, MATLAB e Origin per dati e simulazioni. Sviluppo anche strumenti web e sto approfondendo come l'IA possa velocizzare il lavoro sui materiali.",
+skills_t:"Competenze tecniche",legend_core:"Competenza principale",legend_explore:"In sviluppo",
+cat_cad:"CAD e progettazione",cat_mat:"Materiali e produzione",cat_comp:"Calcolo e dati",cat_web:"Web e digitale",cat_char:"Caratterizzazione e prove",cat_qual:"Qualità e normative",cf_name:"Nome",cf_email:"La tua email",cf_subject:"Oggetto",cf_message:"Messaggio",cf_send:"Invia messaggio",cf_sending:"Invio in corso…",cf_sent:"Grazie, il messaggio è stato inviato. Risponderò il prima possibile.",cf_err:"Non è stato possibile inviare il messaggio da questa pagina. Scrivete direttamente a ntnsoni7@gmail.com.",cf_invalid:"Inserite il vostro indirizzo email e un messaggio.",cf_direct:"Oppure scrivi direttamente",prep_t:"In preparazione",prep_l:"In prep.",tests_t:"Test linguistici e di ammissione",pat_t:"Brevetto e diritto d'autore",pat_main:"Domanda di brevetto indiana 202111023393",copy_main:"Diritto d'autore, opera letteraria (L-97813/2020)",hsk:"HSK 2",nav_cert:"Certificazioni",cta_exp:"Vedi l'esperienza",certsec_t:"Certificazioni e formazione",ws_t:"Workshop e corsi",award_badge:"Best Paper Award · Metals (MDPI)",mdpi_award:"Best Paper Award, rivista Metals (MDPI)",mdpi_sub:"Per la review “Advancements in Metal Processing Additive Technologies: Selective Laser Melting (SLM)”, Metals 14(9), 1081",ta_note:"",mat_t:"Competenze sui materiali",mat_sub:"Materiali con cui ho lavorato direttamente, in produzione o in laboratorio.",tools_t:"Strumenti e metodi",rev_t:"Revisione paritaria",rev_main:"Revisore per riviste di materiali e manifattura",proj_ind:"Progetti industriali · Meccanica Meridionale",proj_ind_sub:"Progetti di miglioramento che ho portato a termine nel 2026 come ingegnere di stabilimento.",proj_res:"Progetti di ricerca e precedenti",g_design:"Progettazione e ingegneria di produzione",g_digital:"Digitalizzazione e magazzino",g_quality:"Qualità, audit e business",
+pubs_t:"Pubblicazioni",pubs_sub:"{n} articoli, review e capitoli di libro, dal 2017 al 2026.",
+f_all:"Tutte",f_am:"Manifattura additiva",f_corr:"Corrosione",f_weld:"Saldatura",f_sus:"Sostenibilità e compositi",
+journey_t:"Percorso professionale",edu_t:"Formazione",proj_t:"Progetti selezionati",recog_t:"Riconoscimenti",
+awards_t:"Premi e riconoscimenti",conf_t:"Conferenze e interventi",cert_t:"Certificazioni",mem_t:"Associazioni e volontariato",
+contact_t:"Contattami",contact_p:"Se state affrontando un problema di materiali o di produzione, o cercate un ingegnere che si muova bene sia in laboratorio sia in reparto, sarò felice di sentirvi.",
+email_l:"Email",uni_l:"Università",copy:"Copia",copied:"Copiato",footer_r:"Italia · Europa",
+lang_names:["Inglese","Italiano","Hindi","Urdu","Punjabi","Cinese","Spagnolo"],native:"Madrelingua",langs_h:"Lingue"},
+fr:{nav_about:"Profil",nav_skills:"Compétences",nav_pubs:"Publications",nav_journey:"Expérience",nav_edu:"Formation",nav_proj:"Projets",nav_recog:"Distinctions",nav_contact:"Contact",lang_label:"Langue",theme:"Changer de thème",
+eyebrow:"Portfolio et recherche",role:"Ingénieur en aérospatiale, mécanique et matériaux",
+lead:"Ingénieur matériaux et procédés basé en Italie, je travaille depuis plus de dix ans sur la fabrication, l'assemblage et le contrôle des pièces métalliques, en laboratoire comme en atelier.",
+cta_pubs:"Voir les publications",cta_contact:"Me contacter",tb_title:"Ingénieur · Chercheur",tb_based:"Basé à",tb_based_v:"Italie",tb_phd:"Doctorat",tb_focus:"Domaines",tb_focus_v:"Fabrication additive · SPIF · Corrosion",tb_materials:"Matériaux",tb_sheet:"Feuille 01 sur 01",
+about_t:"Profil",
+about_p1:"Formé en génie mécanique et en technologie des matériaux, j'ai obtenu mon doctorat à l'Università del Salento. Mes recherches portent surtout sur la fabrication additive métallique : impression de pièces en titane, en aluminium et en acier inoxydable sur machines à lit de poudre, puis amélioration par traitement thermique et finition de surface. Auparavant, j'ai travaillé sur le formage incrémental de tôles, le soudage par friction-malaxage et la protection contre la corrosion. Ma revue sur la fusion laser sélective a reçu le Best Paper Award de la revue Metals (MDPI).",
+about_p2:"J'ai travaillé en Inde, en Chine, en Suède, en Espagne et en Italie, à l'université comme dans l'industrie. Dernièrement, j'étais ingénieur d'usine chez Meccanica Meridionale, où je m'occupais du bureau technique, de la conception et de la qualité pour des clients comme Komatsu et CNH. Je suis aussi relecteur pour des revues en matériaux et fabrication publiées par MDPI, Springer, Elsevier et Wiley.",
+p1t:"Matériaux avancés",p1d:"Titane, aluminium, aciers inoxydables et aciers à outils. J'étudie leur microstructure, leur résistance et leur corrosion par MEB, DRX, micro-CT et CND.",
+p2t:"Fabrication et conception",p2d:"Impression 3D métal, formage de tôle, soudage et usinage CNC, du premier plan jusqu'à la pièce qui passe le contrôle.",
+p3t:"Ingénierie numérique",p3d:"Python, MATLAB et Origin pour les données et la simulation. Je développe aussi des outils web et j'apprends comment l'IA peut accélérer le travail sur les matériaux.",
+skills_t:"Compétences techniques",legend_core:"Compétence principale",legend_explore:"En cours d'apprentissage",
+cat_cad:"CAO et conception",cat_mat:"Matériaux et fabrication",cat_comp:"Calcul et données",cat_web:"Web et numérique",cat_char:"Caractérisation et essais",cat_qual:"Qualité et normes",cf_name:"Nom",cf_email:"Votre e-mail",cf_subject:"Objet",cf_message:"Message",cf_send:"Envoyer le message",cf_sending:"Envoi en cours…",cf_sent:"Merci, votre message a bien été envoyé. Je vous répondrai dès que possible.",cf_err:"Le message n'a pas pu être envoyé depuis cette page. Écrivez directement à ntnsoni7@gmail.com.",cf_invalid:"Merci d'indiquer votre adresse e-mail et un message.",cf_direct:"Ou écrivez directement",prep_t:"En préparation",prep_l:"En prép.",tests_t:"Tests de langue et d'admission",pat_t:"Brevet et droit d'auteur",pat_main:"Demande de brevet indien 202111023393",copy_main:"Droit d'auteur, œuvre littéraire (L-97813/2020)",hsk:"HSK 2",nav_cert:"Certifications",cta_exp:"Voir le parcours",certsec_t:"Certifications et formations",ws_t:"Ateliers et cours",award_badge:"Best Paper Award · Metals (MDPI)",mdpi_award:"Best Paper Award, revue Metals (MDPI)",mdpi_sub:"Pour la revue « Advancements in Metal Processing Additive Technologies: Selective Laser Melting (SLM) », Metals 14(9), 1081",ta_note:"",mat_t:"Expertise matériaux",mat_sub:"Matériaux avec lesquels j'ai travaillé directement, en production ou en laboratoire.",tools_t:"Outils et méthodes",rev_t:"Évaluation par les pairs",rev_main:"Relecteur pour des revues en matériaux et fabrication",proj_ind:"Projets industriels · Meccanica Meridionale",proj_ind_sub:"Projets d'amélioration que j'ai réalisés en 2026 comme ingénieur d'usine.",proj_res:"Projets de recherche et antérieurs",g_design:"Conception et ingénierie de production",g_digital:"Numérisation et gestion des stocks",g_quality:"Qualité, audit et activité",
+pubs_t:"Publications",pubs_sub:"{n} articles, revues et chapitres d'ouvrage, de 2017 à 2026.",
+f_all:"Toutes",f_am:"Fabrication additive",f_corr:"Corrosion",f_weld:"Soudage",f_sus:"Durabilité et composites",
+journey_t:"Parcours professionnel",edu_t:"Formation",proj_t:"Projets sélectionnés",recog_t:"Distinctions",
+awards_t:"Prix et distinctions",conf_t:"Conférences et interventions",cert_t:"Certifications",mem_t:"Adhésions et bénévolat",
+contact_t:"Me contacter",contact_p:"Si vous travaillez sur une question de matériaux ou de fabrication, ou cherchez un ingénieur aussi à l'aise en laboratoire qu'en atelier, je serai heureux d'en discuter.",
+email_l:"E-mail",uni_l:"Université",copy:"Copier",copied:"Copié",footer_r:"Italie · Europe",
+lang_names:["Anglais","Italien","Hindi","Ourdou","Pendjabi","Chinois","Espagnol"],native:"Langue maternelle",langs_h:"Langues"},
+es:{nav_about:"Perfil",nav_skills:"Habilidades",nav_pubs:"Publicaciones",nav_journey:"Experiencia",nav_edu:"Formación",nav_proj:"Proyectos",nav_recog:"Reconocimientos",nav_contact:"Contacto",lang_label:"Idioma",theme:"Cambiar tema",
+eyebrow:"Portafolio e investigación",role:"Ingeniero aeroespacial, mecánico y de materiales",
+lead:"Soy ingeniero de materiales y procesos y vivo en Italia. Desde hace más de diez años trabajo en cómo se fabrican, unen y controlan las piezas metálicas, tanto en el laboratorio como en planta.",
+cta_pubs:"Ver publicaciones",cta_contact:"Contactar",tb_title:"Ingeniero · Investigador",tb_based:"Residencia",tb_based_v:"Italia",tb_phd:"Doctorado",tb_focus:"Áreas",tb_focus_v:"Fabricación aditiva · SPIF · Corrosión",tb_materials:"Materiales",tb_sheet:"Hoja 01 de 01",
+about_t:"Perfil",
+about_p1:"Mi formación es en ingeniería mecánica y tecnología de materiales, y me doctoré en la Università del Salento. Mi investigación se ha centrado sobre todo en la fabricación aditiva de metales: imprimir piezas de titanio, aluminio y acero inoxidable en máquinas de lecho de polvo y mejorarlas después con tratamientos térmicos y acabado superficial. Antes trabajé en conformado incremental de chapa, soldadura por fricción-agitación y protección contra la corrosión. Mi revisión sobre fusión selectiva por láser recibió el Best Paper Award de la revista Metals (MDPI).",
+about_p2:"He trabajado en India, China, Suecia, España e Italia, tanto en la universidad como en la industria. Mi último puesto fue el de ingeniero de planta en Meccanica Meridionale, donde llevaba la oficina técnica, el diseño y la calidad de componentes para clientes como Komatsu y CNH. También reviso artículos para revistas de materiales y fabricación de MDPI, Springer, Elsevier y Wiley.",
+p1t:"Materiales avanzados",p1d:"Titanio, aluminio, aceros inoxidables y de herramientas. Estudio su microestructura, resistencia y corrosión con SEM, DRX, micro-CT y END.",
+p2t:"Fabricación y diseño",p2d:"Impresión 3D de metales, conformado de chapa, soldadura y mecanizado CNC, desde el primer plano hasta la pieza que pasa la inspección.",
+p3t:"Ingeniería digital",p3d:"Python, MATLAB y Origin para datos y simulación. También desarrollo herramientas web y estoy aprendiendo cómo la IA puede agilizar el trabajo con materiales.",
+skills_t:"Competencias técnicas",legend_core:"Competencia principal",legend_explore:"En desarrollo",
+cat_cad:"CAD y diseño de ingeniería",cat_mat:"Materiales y fabricación",cat_comp:"Cálculo y datos",cat_web:"Web y digital",cat_char:"Caracterización y ensayos",cat_qual:"Calidad y normas",cf_name:"Nombre",cf_email:"Su correo",cf_subject:"Asunto",cf_message:"Mensaje",cf_send:"Enviar mensaje",cf_sending:"Enviando…",cf_sent:"Gracias, su mensaje se ha enviado. Le responderé lo antes posible.",cf_err:"No se ha podido enviar el mensaje desde esta página. Escriba directamente a ntnsoni7@gmail.com.",cf_invalid:"Indique su dirección de correo y un mensaje.",cf_direct:"O escriba directamente",prep_t:"En preparación",prep_l:"En prep.",tests_t:"Pruebas de idioma y de admisión",pat_t:"Patente y derechos de autor",pat_main:"Solicitud de patente india 202111023393",copy_main:"Derechos de autor, obra literaria (L-97813/2020)",hsk:"HSK 2",nav_cert:"Certificaciones",cta_exp:"Ver experiencia",certsec_t:"Certificaciones y formación",ws_t:"Talleres y cursos",award_badge:"Best Paper Award · Metals (MDPI)",mdpi_award:"Best Paper Award, revista Metals (MDPI)",mdpi_sub:"Por la revisión «Advancements in Metal Processing Additive Technologies: Selective Laser Melting (SLM)», Metals 14(9), 1081",ta_note:"",mat_t:"Experiencia en materiales",mat_sub:"Materiales con los que he trabajado directamente, en producción o en laboratorio.",tools_t:"Herramientas y métodos",rev_t:"Revisión por pares",rev_main:"Revisor de revistas de materiales y fabricación",proj_ind:"Proyectos industriales · Meccanica Meridionale",proj_ind_sub:"Proyectos de mejora que completé en 2026 como ingeniero de planta.",proj_res:"Proyectos de investigación y anteriores",g_design:"Diseño e ingeniería de producción",g_digital:"Digitalización e inventario",g_quality:"Calidad, auditoría y negocio",
+pubs_t:"Publicaciones",pubs_sub:"{n} artículos, revisiones y capítulos de libro, de 2017 a 2026.",
+f_all:"Todas",f_am:"Fabricación aditiva",f_corr:"Corrosión",f_weld:"Soldadura",f_sus:"Sostenibilidad y compuestos",
+journey_t:"Trayectoria profesional",edu_t:"Formación",proj_t:"Proyectos destacados",recog_t:"Reconocimientos",
+awards_t:"Premios y distinciones",conf_t:"Congresos y ponencias",cert_t:"Certificaciones",mem_t:"Afiliaciones y voluntariado",
+contact_t:"Contacto",contact_p:"Si está trabajando en un problema de materiales o de fabricación, o busca un ingeniero que se desenvuelva igual de bien en el laboratorio que en planta, estaré encantado de hablar con usted.",
+email_l:"Correo",uni_l:"Universidad",copy:"Copiar",copied:"Copiado",footer_r:"Italia · Europa",
+lang_names:["Inglés","Italiano","Hindi","Urdu","Panyabí","Chino","Español"],native:"Lengua materna",langs_h:"Idiomas"},
+de:{nav_about:"Profil",nav_skills:"Kompetenzen",nav_pubs:"Publikationen",nav_journey:"Erfahrung",nav_edu:"Ausbildung",nav_proj:"Projekte",nav_recog:"Auszeichnungen",nav_contact:"Kontakt",lang_label:"Sprache",theme:"Design wechseln",
+eyebrow:"Portfolio & Forschung",role:"Ingenieur für Luft- und Raumfahrt, Maschinenbau und Werkstoffe",
+lead:"Ich bin Werkstoff- und Verfahrensingenieur in Italien. Seit über zehn Jahren beschäftige ich mich damit, wie Metallbauteile hergestellt, gefügt und geprüft werden, im Labor ebenso wie in der Fertigung.",
+cta_pubs:"Publikationen ansehen",cta_contact:"Kontakt aufnehmen",tb_title:"Ingenieur · Forscher",tb_based:"Standort",tb_based_v:"Italien",tb_phd:"Promotion",tb_focus:"Schwerpunkte",tb_focus_v:"Additive Fertigung · SPIF · Korrosion",tb_materials:"Werkstoffe",tb_sheet:"Blatt 01 von 01",
+about_t:"Profil",
+about_p1:"Ich habe Maschinenbau und Werkstofftechnik studiert und an der Università del Salento promoviert. Der Schwerpunkt meiner Forschung liegt auf der additiven Fertigung von Metallen: Bauteile aus Titan, Aluminium und Edelstahl im Pulverbettverfahren drucken und sie anschließend durch Wärmebehandlung und Oberflächenbearbeitung verbessern. Davor habe ich zur inkrementellen Blechumformung, zum Rührreibschweißen und zum Korrosionsschutz gearbeitet. Mein Übersichtsartikel zum selektiven Laserschmelzen wurde von der Zeitschrift Metals (MDPI) mit dem Best Paper Award ausgezeichnet.",
+about_p2:"Ich habe in Indien, China, Schweden, Spanien und Italien gearbeitet, an Hochschulen ebenso wie in der Industrie. Zuletzt war ich Betriebsingenieur bei Meccanica Meridionale und dort für technisches Büro, Konstruktion und Qualität bei Bauteilen für Kunden wie Komatsu und CNH zuständig. Außerdem begutachte ich Artikel für Fachzeitschriften zu Werkstoffen und Fertigung bei MDPI, Springer, Elsevier und Wiley.",
+p1t:"Hochleistungswerkstoffe",p1d:"Titan, Aluminium, Edel- und Werkzeugstähle. Ich untersuche Gefüge, Festigkeit und Korrosion mit REM, XRD, Mikro-CT und ZfP.",
+p2t:"Fertigung & Konstruktion",p2d:"Metall-3D-Druck, Blechumformung, Schweißen und CNC-Bearbeitung, von der ersten Zeichnung bis zum Bauteil, das die Prüfung besteht.",
+p3t:"Digitales Engineering",p3d:"Python, MATLAB und Origin für Daten und Simulation. Außerdem entwickle ich Web-Tools und lerne, wie KI die Werkstoffarbeit beschleunigen kann.",
+skills_t:"Technische Kompetenzen",legend_core:"Kernkompetenz",legend_explore:"Im Aufbau",
+cat_cad:"CAD & Konstruktion",cat_mat:"Werkstoffe & Fertigung",cat_comp:"Berechnung & Daten",cat_web:"Web & Digitales",cat_char:"Charakterisierung & Prüfung",cat_qual:"Qualität & Normen",cf_name:"Name",cf_email:"Ihre E-Mail",cf_subject:"Betreff",cf_message:"Nachricht",cf_send:"Nachricht senden",cf_sending:"Wird gesendet…",cf_sent:"Vielen Dank, Ihre Nachricht wurde gesendet. Ich melde mich so bald wie möglich.",cf_err:"Die Nachricht konnte von dieser Seite nicht gesendet werden. Bitte schreiben Sie direkt an ntnsoni7@gmail.com.",cf_invalid:"Bitte geben Sie Ihre E-Mail-Adresse und eine Nachricht ein.",cf_direct:"Oder direkt schreiben",prep_t:"In Vorbereitung",prep_l:"In Vorb.",tests_t:"Sprach- und Zulassungstests",pat_t:"Patent & Urheberrecht",pat_main:"Indische Patentanmeldung 202111023393",copy_main:"Urheberrecht, literarisches Werk (L-97813/2020)",hsk:"HSK 2",nav_cert:"Zertifikate",cta_exp:"Werdegang ansehen",certsec_t:"Zertifikate & Weiterbildung",ws_t:"Workshops & Kurse",award_badge:"Best Paper Award · Metals (MDPI)",mdpi_award:"Best Paper Award, Zeitschrift Metals (MDPI)",mdpi_sub:"Für den Übersichtsartikel „Advancements in Metal Processing Additive Technologies: Selective Laser Melting (SLM)“, Metals 14(9), 1081",ta_note:"",mat_t:"Werkstoffkompetenz",mat_sub:"Werkstoffe, mit denen ich selbst gearbeitet habe, in der Fertigung oder im Labor.",tools_t:"Werkzeuge & Methoden",rev_t:"Gutachtertätigkeit",rev_main:"Gutachter für Fachzeitschriften zu Werkstoffen und Fertigung",proj_ind:"Industrieprojekte · Meccanica Meridionale",proj_ind_sub:"Verbesserungsprojekte, die ich 2026 als Betriebsingenieur umgesetzt habe.",proj_res:"Forschungs- und frühere Projekte",g_design:"Konstruktion & Produktionstechnik",g_digital:"Digitalisierung & Lagerwesen",g_quality:"Qualität, Audit & Geschäft",
+pubs_t:"Publikationen",pubs_sub:"{n} Artikel, Übersichtsarbeiten und Buchkapitel, 2017 bis 2026.",
+f_all:"Alle",f_am:"Additive Fertigung",f_corr:"Korrosion",f_weld:"Schweißen",f_sus:"Nachhaltigkeit & Verbundwerkstoffe",
+journey_t:"Beruflicher Werdegang",edu_t:"Ausbildung",proj_t:"Ausgewählte Projekte",recog_t:"Auszeichnungen",
+awards_t:"Preise & Auszeichnungen",conf_t:"Konferenzen & Vorträge",cert_t:"Zertifikate",mem_t:"Mitgliedschaften & Ehrenamt",
+contact_t:"Kontakt",contact_p:"Wenn Sie an einer Werkstoff- oder Fertigungsfrage arbeiten oder einen Ingenieur suchen, der im Labor genauso zu Hause ist wie in der Werkhalle, freue ich mich auf Ihre Nachricht.",
+email_l:"E-Mail",uni_l:"Universität",copy:"Kopieren",copied:"Kopiert",footer_r:"Italien · Europa",
+lang_names:["Englisch","Italienisch","Hindi","Urdu","Panjabi","Chinesisch","Spanisch"],native:"Muttersprache",langs_h:"Sprachen"}
+};
+
+const LEVELS=["C2","B2",null,null,null,"HSK","A1"]; // same order as lang_names: English, Italian, Hindi, Urdu, Punjabi, Chinese, Spanish // order matches lang_names; null = native
+const NATIVE_ORDER=[2,3,4,0,1,6,5];
+
+const SKILLS={
+cad:[["AutoCAD 2026",1],["CATIA V26",1],["SOLIDWORKS 2018",1],["Geomagic Design",1],["Adobe Photoshop",1],
+ [{en:"Technical drawings & calculation reports",it:"Disegni tecnici e relazioni di calcolo",fr:"Plans techniques et notes de calcul",es:"Planos técnicos e informes de cálculo",de:"Technische Zeichnungen & Berechnungsberichte"},1],
+ [{en:"Structural checks of welded & bolted joints",it:"Verifiche strutturali di giunti saldati e bullonati",fr:"Vérification d'assemblages soudés et boulonnés",es:"Verificación de uniones soldadas y atornilladas",de:"Nachweis von Schweiß- & Schraubverbindungen"},1],
+ [{en:"Laser-cutting nesting optimisation",it:"Ottimizzazione del nesting per taglio laser",fr:"Optimisation de l'imbrication pour découpe laser",es:"Optimización del nesting para corte láser",de:"Nesting-Optimierung für Laserschneiden"},1]],
+mat:[
+ [{en:"Selective laser melting (SLM)",it:"Fusione laser selettiva (SLM)",fr:"Fusion laser sélective (SLM)",es:"Fusión selectiva por láser (SLM)",de:"Selektives Laserschmelzen (SLM)"},1],
+ ["Renishaw AM 400",1],
+ [{en:"Heat treatment (stress relief, annealing, tempering)",it:"Trattamenti termici (distensione, ricottura, rinvenimento)",fr:"Traitements thermiques (détensionnement, recuit, revenu)",es:"Tratamientos térmicos (alivio de tensiones, recocido, revenido)",de:"Wärmebehandlung (Spannungsarmglühen, Glühen, Anlassen)"},1],
+ [{en:"Friction stir welding",it:"Saldatura per attrito (FSW)",fr:"Soudage par friction-malaxage",es:"Soldadura por fricción-agitación",de:"Rührreibschweißen"},1],
+ [{en:"TIG · MIG/MAG welding",it:"Saldatura TIG · MIG/MAG",fr:"Soudage TIG · MIG/MAG",es:"Soldadura TIG · MIG/MAG",de:"WIG- · MIG/MAG-Schweißen"},1],
+ [{en:"Single point incremental forming (SPIF)",it:"Formatura incrementale (SPIF)",fr:"Formage incrémental (SPIF)",es:"Conformado incremental (SPIF)",de:"Inkrementelle Blechumformung (SPIF)"},1],
+ [{en:"CNC machining",it:"Lavorazioni CNC",fr:"Usinage CNC",es:"Mecanizado CNC",de:"CNC-Bearbeitung"},1],
+ [{en:"Laser, plasma & oxy-fuel cutting",it:"Taglio laser, plasma e ossitaglio",fr:"Découpe laser, plasma et oxycoupage",es:"Corte láser, plasma y oxicorte",de:"Laser-, Plasma- & Brennschneiden"},1],
+ [{en:"Post-processing & surface finishing",it:"Post-processing e finitura superficiale",fr:"Post-traitement et finition de surface",es:"Posprocesado y acabado superficial",de:"Nachbearbeitung & Oberflächenfinish"},1]],
+char:[
+ [{en:"SEM (licensed operator)",it:"SEM (operatore abilitato)",fr:"MEB (opérateur habilité)",es:"SEM (operador acreditado)",de:"REM (zugelassener Bediener)"},1],
+ [{en:"XRD (licensed operator)",it:"XRD (operatore abilitato)",fr:"DRX (opérateur habilité)",es:"DRX (operador acreditado)",de:"XRD (zugelassener Bediener)"},1],
+ ["AFM",1],
+ [{en:"Micro-CT",it:"Micro-CT",fr:"Micro-tomographie (µCT)",es:"Micro-CT",de:"Mikro-CT"},1],
+ [{en:"NDT: VT · PT · MT · RT · UT",it:"CND: VT · PT · MT · RT · UT",fr:"CND : VT · PT · MT · RT · UT",es:"END: VT · PT · MT · RT · UT",de:"ZfP: VT · PT · MT · RT · UT"},1],
+ [{en:"Metallography & mechanical testing",it:"Metallografia e prove meccaniche",fr:"Métallographie et essais mécaniques",es:"Metalografía y ensayos mecánicos",de:"Metallographie & mechanische Prüfung"},1],
+ [{en:"Electrochemical corrosion testing",it:"Prove di corrosione elettrochimica",fr:"Essais de corrosion électrochimique",es:"Ensayos de corrosión electroquímica",de:"Elektrochemische Korrosionsprüfung"},1],
+ [{en:"Digital image correlation (DIC)",it:"Correlazione digitale di immagini (DIC)",fr:"Corrélation d'images numériques (CIN)",es:"Correlación digital de imágenes (DIC)",de:"Digitale Bildkorrelation (DIC)"},1]],
+qual:[
+ ["Lean Six Sigma · Kaizen",1],
+ [{en:"PFMEA & control plans",it:"PFMEA e piani di controllo",fr:"AMDEC processus et plans de surveillance",es:"AMFE de proceso y planes de control",de:"Prozess-FMEA & Prüfpläne"},1],
+ [{en:"Root cause analysis (8D, Ishikawa, 5 Whys)",it:"Analisi delle cause (8D, Ishikawa, 5 Whys)",fr:"Analyse des causes (8D, Ishikawa, 5 pourquoi)",es:"Análisis de causa raíz (8D, Ishikawa, 5 porqués)",de:"Ursachenanalyse (8D, Ishikawa, 5 Why)"},1],
+ ["ISO 9001 · IATF 16949",1],
+ [{en:"Taguchi design of experiments",it:"Progettazione degli esperimenti (Taguchi)",fr:"Plans d'expériences (Taguchi)",es:"Diseño de experimentos (Taguchi)",de:"Versuchsplanung (Taguchi)"},1],
+ [{en:"Product certification dossiers (valves, pressure equipment)",it:"Dossier di certificazione prodotto (valvole, apparecchi in pressione)",fr:"Dossiers de certification produit (vannes, équipements sous pression)",es:"Dossiers de certificación de producto (válvulas, equipos a presión)",de:"Produktzertifizierungsdossiers (Armaturen, Druckgeräte)"},1],
+ ["ERP / SAP",1]],
+comp:[["Python",1],["MATLAB",1],["Origin",1],["CFD",1],[{en:"DFT (Gaussian)",it:"DFT (Gaussian)",fr:"DFT (Gaussian)",es:"DFT (Gaussian)",de:"DFT (Gaussian)"},1],
+ [{en:"Data analysis & visualisation",it:"Analisi e visualizzazione dei dati",fr:"Analyse et visualisation de données",es:"Análisis y visualización de datos",de:"Datenanalyse & Visualisierung"},1],
+ [{en:"Numerical process simulation",it:"Simulazione numerica di processo",fr:"Simulation numérique des procédés",es:"Simulación numérica de procesos",de:"Numerische Prozesssimulation"},1],
+ [{en:"Machine learning",it:"Machine learning",fr:"Apprentissage automatique",es:"Aprendizaje automático",de:"Maschinelles Lernen"},0],
+ [{en:"AI tools for research",it:"Strumenti di IA per la ricerca",fr:"Outils d'IA pour la recherche",es:"Herramientas de IA para la investigación",de:"KI-Werkzeuge für die Forschung"},0]],
+web:[["HTML · CSS · JavaScript",0],
+ [{en:"Portfolio & research websites",it:"Siti web di portfolio e ricerca",fr:"Sites de portfolio et de recherche",es:"Webs de portafolio e investigación",de:"Portfolio- & Forschungswebsites"},0],
+ ["Microsoft Office",1],
+ [{en:"Video conferencing & remote collaboration",it:"Videoconferenze e collaborazione a distanza",fr:"Visioconférence et travail à distance",es:"Videoconferencia y colaboración remota",de:"Videokonferenzen & Remote-Zusammenarbeit"},1]]
+};
+
+const MATS=[
+ [{en:"Titanium alloys",it:"Leghe di titanio",fr:"Alliages de titane",es:"Aleaciones de titanio",de:"Titanlegierungen"},["Ti6Al4V","Ti Grade 2"]],
+ [{en:"Steels & tool steels",it:"Acciai e acciai per utensili",fr:"Aciers et aciers à outils",es:"Aceros y aceros de herramientas",de:"Stähle & Werkzeugstähle"},["17-4 PH","H13","DC01","DC02","DC04","N80"]],
+ [{en:"Aluminium alloys",it:"Leghe di alluminio",fr:"Alliages d'aluminium",es:"Aleaciones de aluminio",de:"Aluminiumlegierungen"},["AlSi10Mg","Al6061"]],
+ [{en:"Copper & magnesium",it:"Rame e magnesio",fr:"Cuivre et magnésium",es:"Cobre y magnesio",de:"Kupfer & Magnesium"},[{en:"Pure Cu",it:"Cu puro",fr:"Cu pur",es:"Cu puro",de:"Rein-Cu"},"Mg-Al"]],
+ [{en:"Hard materials",it:"Materiali duri",fr:"Matériaux durs",es:"Materiales duros",de:"Hartstoffe"},[{en:"Carbide",it:"Carburo",fr:"Carbure",es:"Carburo",de:"Hartmetall"}]]
+];
+const IND=[
+ ["g_design",[
+  [{en:"Design and build of a multi-part fixture for robotic welding of the Komatsu FOOT component (42N-70-12521) on YASKAWA cells 1 and 2",it:"Progettazione e realizzazione di un'attrezzatura per saldatura robotizzata multi-pezzo del componente Komatsu FOOT (42N-70-12521) con le celle YASKAWA 1 e 2",fr:"Conception et réalisation d'un montage multi-pièces pour le soudage robotisé du composant Komatsu FOOT (42N-70-12521) sur les cellules YASKAWA 1 et 2",es:"Diseño y fabricación de un utillaje multipieza para la soldadura robotizada del componente Komatsu FOOT (42N-70-12521) en las celdas YASKAWA 1 y 2",de:"Konstruktion und Bau einer Mehrfachvorrichtung zum Roboterschweißen des Komatsu-Bauteils FOOT (42N-70-12521) in den YASKAWA-Zellen 1 und 2"},"Fixture design · Robotic welding"],
+  [{en:"Komatsu component assembly engineering: BOM analysis, design parameters, manufacturing, welding, mounting, final assembly, quality inspection and dispatch readiness",it:"Ingegneria di assemblaggio componenti Komatsu: analisi della distinta base (BOM), parametri di progetto, produzione, saldatura, montaggio, assemblaggio finale, controllo qualità e preparazione alla spedizione",fr:"Ingénierie d'assemblage de composants Komatsu : analyse de la nomenclature (BOM), paramètres de conception, fabrication, soudage, montage, assemblage final, contrôle qualité et préparation à l'expédition",es:"Ingeniería de montaje de componentes Komatsu: análisis de la lista de materiales (BOM), parámetros de diseño, fabricación, soldadura, montaje, ensamblaje final, control de calidad y preparación para el envío",de:"Montageengineering für Komatsu-Komponenten: Stücklistenanalyse (BOM), Konstruktionsparameter, Fertigung, Schweißen, Montage, Endmontage, Qualitätsprüfung und Versandbereitschaft"},"BOM · Assembly · QC"],
+  [{en:"Simplified technical drawings that operators understand faster, reducing assembly errors in metalworking",it:"Semplificazione dei disegni tecnici per una maggiore comprensione da parte degli operatori e riduzione degli errori di assemblaggio nel settore metalmeccanico",fr:"Simplification des plans techniques pour une meilleure compréhension par les opérateurs et moins d'erreurs d'assemblage en métallurgie",es:"Simplificación de los planos técnicos para una mejor comprensión por parte de los operarios y menos errores de montaje en el sector metalmecánico",de:"Vereinfachte technische Zeichnungen für ein besseres Verständnis der Werker und weniger Montagefehler in der Metallverarbeitung"},"Technical drawings"]]],
+ ["g_digital",[
+  [{en:"Smart inventory and production management system for manufacturing (CNH, Komatsu, PM and others)",it:"Sistema intelligente di gestione del magazzino e della produzione per la manifattura (CNH, Komatsu, PM e altri)",fr:"Système intelligent de gestion des stocks et de la production (CNH, Komatsu, PM et autres)",es:"Sistema inteligente de gestión de inventario y producción para la fabricación (CNH, Komatsu, PM y otros)",de:"Intelligentes Lager- und Produktionsmanagementsystem für die Fertigung (CNH, Komatsu, PM u. a.)"},"Production management"],
+  [{en:"Visual digitalisation of externally purchased components in the Prodware system to improve analysis and ordering",it:"Digitalizzazione visiva dei componenti acquistati esternamente nel sistema Prodware per il miglioramento dell'analisi e del processo di ordinazione",fr:"Numérisation visuelle des composants achetés à l'extérieur dans le système Prodware pour améliorer l'analyse et les commandes",es:"Digitalización visual de los componentes comprados externamente en el sistema Prodware para mejorar el análisis y el proceso de pedidos",de:"Visuelle Digitalisierung zugekaufter Komponenten im Prodware-System zur Verbesserung von Analyse und Bestellprozess"},"Prodware · ERP"],
+  [{en:"Resolving duplicate component codes in the warehouse system",it:"Problema dei codici duplicati dei componenti nel sistema di magazzino",fr:"Résolution des codes de composants en double dans le système de stock",es:"Resolución de códigos de componentes duplicados en el sistema de almacén",de:"Bereinigung doppelter Bauteilnummern im Lagersystem"},"Inventory data"]]],
+ ["g_quality",[
+  [{en:"Internal audit: defining the main objectives",it:"Obiettivi principali dell'audit",fr:"Audit interne : définition des objectifs principaux",es:"Auditoría interna: definición de los objetivos principales",de:"Internes Audit: Festlegung der Hauptziele"},"Audit"],
+  [{en:"Manufacturing tender evaluation and technical parameter analysis",it:"Valutazione delle gare d'appalto manifatturiere e analisi dei parametri tecnici",fr:"Évaluation d'appels d'offres industriels et analyse des paramètres techniques",es:"Evaluación de licitaciones de fabricación y análisis de parámetros técnicos",de:"Bewertung von Fertigungsausschreibungen und Analyse technischer Parameter"},"Tenders"],
+  [{en:"Why a digital presence is a strategic advantage for Meccanica Meridionale",it:"Perché una presenza digitale è un vantaggio strategico per Meccanica Meridionale",fr:"Pourquoi une présence numérique est un avantage stratégique pour Meccanica Meridionale",es:"Por qué la presencia digital es una ventaja estratégica para Meccanica Meridionale",de:"Warum eine digitale Präsenz ein strategischer Vorteil für Meccanica Meridionale ist"},"Digital strategy"]]]
+];
+
+const SKILL_CATS=["cad","mat","char","qual","comp","web"];
+
+const PUBS=[
+[2026,"Characterization of Powder Bed Fusion–Laser Beam Ti6Al4V Samples in the As-Built and Stress-Relief States",["am"],"Materials 19(13), 2888","https://doi.org/10.3390/ma19132888"],
+[2025,"A Brief Analysis of Corrosion-induced Degradation in Metallic Materials: A Challenge in Additive Manufacturing",["corr","am"],"Review · Advances in Materials and Processing Technologies 11(4), 2842–2875","https://doi.org/10.1080/2374068X.2024.2432727"],
+[2025,"An Investigation of Clay Percentage Variation on Composite Materials Sustainability Identification by Digital Image Correlation",["sus"],"Advances in Materials and Processing Technologies 11(4), 2547–2562","https://doi.org/10.1080/2374068X.2024.2423993"],
+[2024,"Advancements in Metal Processing Additive Technologies: Selective Laser Melting (SLM)",["am"],"Metals 14(9), 1081","https://doi.org/10.3390/met14091081",1],
+[2024,"On the Effect of Exposure Time on Al-Si10-Mg Powder Processed by Selective Laser Melting",["am"],"Metals 14(1), 76","https://doi.org/10.3390/met14010076"],
+[2024,"Advancing Sustainable Energy: Exploring New Frontiers and Opportunities in the Green Transition",["sus"],"Advanced Sustainable Systems 8(10), 2400160","https://doi.org/10.1002/adsu.202400160"],
+[2024,"Optimizing Selective Laser Melting Process Parameters and Post-Processing Treatment to Enhance Mechanical Properties and Corrosion Resistance of 17-4 PH Parts",["am","corr"],"Presented at ASTM ICAM 2023, student competition"],
+[2024,"Advanced Characteristics of Materials Used in Additive Manufacturing",["am"],"Chapter 3 · Advances in Pre- and Post-Additive Manufacturing Processes (CRC Press), 39–63","https://doi.org/10.1201/9781003428862-3"],
+[2024,"Future Trends and Challenges in Super-finishing Processes",["am"],"Chapter 10 · Advances in Pre- and Post-Additive Manufacturing Processes (CRC Press), 196–212","https://doi.org/10.1201/9781003428862-10"],
+[2024,"Artificial Recreation of Human Organs by Additive Manufacturing",["am"],"Book chapter · Mechanical Engineering in Biomedical Applications (Wiley-Scrivener), 23–42","https://doi.org/10.1002/9781394175109.ch2"],
+[2023,"Optimization of Sandblasting to Improve the Surface Finish of 17-4PH Parts Manufactured by SLM Using Different Laser Scanning Strategies",["am"],"Key Engineering Materials 958, 97–103","https://doi.org/10.4028/p-cgHZ41"],
+[2022,"The Future of Education After COVID-19: What Is the Role of Technology?",[],"Book chapter · Studies in Computational Intelligence (Springer Nature), 19–35","https://doi.org/10.1007/978-3-030-93921-2_2"],
+[2019,"A Combined Electrochemical and Theoretical Analysis of Environmentally Benign Polymer for Corrosion Protection of N80 Steel in Sweet Corrosive Environment",["corr"],"Results in Physics 13, 102116","https://doi.org/10.1016/j.rinp.2019.02.052"],
+[2019,"Analyses of New Electrochemical Techniques to Study the Behavior of Some Corrosion Mitigating Polymers on N80 Tubing Steel",["corr"],"ACS Omega 4(2), 3420–3431","https://doi.org/10.1021/acsomega.8b02983"],
+[2019,"Electrochemical and Surface Studies of 0.95 Mg-Al Alloy and Pure Copper Joints Prepared Using Friction Stir Welding with Low-Medium-High Tool Travel Speeds",["weld","corr"],"International Journal of Electrochemical Science 14(9), 8949–8972","https://doi.org/10.20964/2019.09.46"],
+[2017,"Defects Formation during Friction Stir Welding: A Review",["weld"],"IJEMR 7(3), 121–125"]
+];
+
+const RESEARCHER={en:"Researcher",it:"Ricercatore",fr:"Chercheur",es:"Investigador",de:"Forscher"};
+const JOBS=[
+{when:"01/2026 – 09/2026",org:"Meccanica Meridionale S.r.l. · {IT}",
+ t:{en:"Plant Engineer",it:"Ingegnere di stabilimento",fr:"Ingénieur d'usine",es:"Ingeniero de planta",de:"Betriebsingenieur"},
+ d:{en:"I ran the technical side of the plant: drawings, structural checks on welded and bolted joints, laser-cutting nesting and quality control. I worked closely with production on CNC machining, robotic and manual welding and final assembly, and completed nine improvement projects (listed under Projects).",it:"Ho seguito la parte tecnica dello stabilimento: disegni, verifiche strutturali su giunti saldati e bullonati, nesting per il taglio laser e controllo qualità. Ho lavorato a stretto contatto con la produzione su lavorazioni CNC, saldatura robotizzata e manuale e assemblaggio finale, portando a termine nove progetti di miglioramento (vedi Progetti).",fr:"J'ai pris en charge la partie technique de l'usine : plans, vérification des assemblages soudés et boulonnés, imbrication pour la découpe laser et contrôle qualité. J'ai travaillé en étroite collaboration avec la production sur l'usinage CNC, le soudage robotisé et manuel et l'assemblage final, et mené à bien neuf projets d'amélioration (voir Projets).",es:"Me encargué de la parte técnica de la planta: planos, verificación de uniones soldadas y atornilladas, nesting para corte láser y control de calidad. Trabajé codo con codo con producción en mecanizado CNC, soldadura robotizada y manual y montaje final, y completé nueve proyectos de mejora (ver Proyectos).",de:"Ich war für die technische Seite des Werks zuständig: Zeichnungen, Nachweise für Schweiß- und Schraubverbindungen, Nesting für das Laserschneiden und Qualitätskontrolle. Eng mit der Fertigung habe ich bei CNC-Bearbeitung, Roboter- und Handschweißen sowie der Endmontage zusammengearbeitet und neun Verbesserungsprojekte abgeschlossen (siehe Projekte)."},
+ tags:["Technical office","Design","Quality","Robotic welding","CNC","Nesting"]},
+{when:"06/2024 – 12/2024",org:"HB Technology S.r.l. (TPS Group) · {IT}",
+ t:{en:"Researcher · Additive Manufacturing",it:"Ricercatore · Manifattura additiva",fr:"Chercheur · Fabrication additive",es:"Investigador · Fabricación aditiva",de:"Forscher · Additive Fertigung"},
+ d:{en:"I printed test parts in aluminium, steel and titanium alloys on a Renishaw AM 400 for aerospace use, handling machine set-up and calibration myself. I then heat-treated the parts and checked them with Micro-CT, metallography and mechanical tests.",it:"Ho stampato campioni in leghe di alluminio, acciaio e titanio su una Renishaw AM 400 per applicazioni aerospaziali, occupandomi direttamente di settaggio e calibrazione della macchina. Ho poi trattato termicamente i pezzi e li ho verificati con Micro-CT, metallografia e prove meccaniche.",fr:"J'ai imprimé des pièces d'essai en alliages d'aluminium, d'acier et de titane sur une Renishaw AM 400 pour l'aéronautique, en assurant moi-même le réglage et l'étalonnage de la machine. J'ai ensuite traité thermiquement les pièces et je les ai contrôlées par micro-CT, métallographie et essais mécaniques.",es:"Imprimí probetas de aleaciones de aluminio, acero y titanio en una Renishaw AM 400 para uso aeroespacial, encargándome yo mismo de la puesta a punto y calibración de la máquina. Después traté térmicamente las piezas y las verifiqué con micro-CT, metalografía y ensayos mecánicos.",de:"Ich habe auf einer Renishaw AM 400 Probebauteile aus Aluminium-, Stahl- und Titanlegierungen für die Luftfahrt gedruckt und Einrichtung und Kalibrierung der Maschine selbst übernommen. Anschließend habe ich die Teile wärmebehandelt und mit Mikro-CT, Metallographie und mechanischen Prüfungen untersucht."},
+ tags:["Renishaw AM 400","Ti · Al · Fe alloys","Micro-CT","Heat treatment"]},
+{when:"11/2021 – 04/2022",org:"Institute of Advanced Materials (IAAM) · {SE}",
+ t:RESEARCHER,
+ d:{en:"A six-month research programme with an international team working remotely. I reviewed recent literature in materials science and analysed and plotted data in Python, MATLAB and Origin.",it:"Programma di ricerca di sei mesi con un team internazionale da remoto. Ho analizzato la letteratura recente nella scienza dei materiali ed elaborato i dati con Python, MATLAB e Origin.",fr:"Programme de recherche de six mois avec une équipe internationale à distance. J'ai étudié la littérature récente en science des matériaux, puis analysé et représenté les données avec Python, MATLAB et Origin.",es:"Programa de investigación de seis meses con un equipo internacional en remoto. Revisé la literatura reciente en ciencia de materiales y analicé y representé datos con Python, MATLAB y Origin.",de:"Sechsmonatiges Forschungsprogramm mit einem internationalen Remote-Team. Ich habe aktuelle Literatur zur Werkstoffwissenschaft ausgewertet und Daten mit Python, MATLAB und Origin analysiert und dargestellt."},
+ tags:["Python","MATLAB","Origin"]},
+{when:"08/2021 – 02/2022",org:"SVNIT · {IN}",
+ t:{en:"Researcher · Junior Research Fellow (SPIF)",it:"Ricercatore · Junior Research Fellow (SPIF)",fr:"Chercheur · Junior Research Fellow (SPIF)",es:"Investigador · Junior Research Fellow (SPIF)",de:"Forscher · Junior Research Fellow (SPIF)"},
+ d:{en:"DST-SERB funded project 4/269 on the industrial suitability and commercialisation of a novel SPIF process for DC04 steel and Ti Grade 2. I designed the experiments, set up the process on a CNC milling machine, and used simulation and analytical models to arrive at better process parameters.",it:"Progetto DST-SERB n. 4/269 sull'idoneità industriale e la commercializzazione di un nuovo processo SPIF per acciaio DC04 e Ti Grado 2. Ho progettato le prove, messo a punto il processo su una fresatrice CNC e usato simulazioni e modelli analitici per individuare parametri migliori.",fr:"Projet DST-SERB n° 4/269 sur l'aptitude industrielle et la commercialisation d'un nouveau procédé SPIF pour l'acier DC04 et le Ti grade 2. J'ai conçu les essais, mis au point le procédé sur une fraiseuse CNC et utilisé la simulation et des modèles analytiques pour affiner les paramètres.",es:"Proyecto DST-SERB n.º 4/269 sobre la idoneidad industrial y la comercialización de un nuevo proceso SPIF para acero DC04 y Ti grado 2. Diseñé los ensayos, puse a punto el proceso en una fresadora CNC y utilicé simulación y modelos analíticos para encontrar mejores parámetros.",de:"DST-SERB-Projekt Nr. 4/269 zur industriellen Eignung und Kommerzialisierung eines neuen SPIF-Verfahrens für DC04-Stahl und Ti Grade 2. Ich habe die Versuche geplant, den Prozess auf einer CNC-Fräsmaschine aufgebaut und die Parameter mit Simulationen und analytischen Modellen verbessert."},
+ tags:["SPIF","CNC","Ti Gr-2","DC04","Simulation"]},
+{when:"09/2018 – 12/2021",org:"Southwest Petroleum University (SWPU) · {CN}",
+ t:{en:"Research Fellow",it:"Assegnista di ricerca",fr:"Chercheur contractuel",es:"Investigador contratado",de:"Wissenschaftlicher Mitarbeiter"},
+ d:{en:"Three years of research on corrosion and joining. My main work was on eco-friendly polymers that protect N80 tubing steel, and on friction stir welded joints between dissimilar metals. I hold operator licences for SEM and XRD.",it:"Tre anni di ricerca su corrosione e giunzione. Mi sono occupato soprattutto di polimeri eco-compatibili per proteggere l'acciaio N80 per tubing e di giunti saldati per attrito tra metalli diversi. Ho le abilitazioni all'uso di SEM e XRD.",fr:"Trois ans de recherche sur la corrosion et l'assemblage. J'ai surtout travaillé sur des polymères écologiques protégeant l'acier de tubage N80 et sur des assemblages soudés par friction-malaxage entre métaux différents. Je suis habilité à utiliser le MEB et la DRX.",es:"Tres años de investigación en corrosión y uniones. Trabajé sobre todo en polímeros ecológicos para proteger el acero de tubería N80 y en uniones soldadas por fricción-agitación entre metales distintos. Estoy acreditado para operar SEM y DRX.",de:"Drei Jahre Forschung zu Korrosion und Fügetechnik. Im Mittelpunkt standen umweltfreundliche Polymere zum Schutz von N80-Rohrstahl und rührreibgeschweißte Verbindungen zwischen unterschiedlichen Metallen. Ich bin zugelassener Bediener für REM und XRD."},
+ tags:["SEM","XRD","AFM","Corrosion","FSW"]},
+{when:"08/2017 – 01/2018",org:"Govt. MLV Textile & Engineering College · {IN}",
+ t:{en:"Assistant Professor (Guest Faculty)",it:"Professore assistente (docente a contratto)",fr:"Maître de conférences invité",es:"Profesor asistente invitado",de:"Gastdozent (Assistant Professor)"},
+ d:{en:"I taught manufacturing processes and materials science to engineering students, including lab sessions on mechanical testing, heat treatment, welding and NDT.",it:"Ho insegnato processi produttivi e scienza dei materiali agli studenti di ingegneria, con esercitazioni di laboratorio su prove meccaniche, trattamenti termici, saldatura e controlli non distruttivi.",fr:"J'ai enseigné les procédés de fabrication et la science des matériaux à des élèves ingénieurs, avec des travaux pratiques en essais mécaniques, traitements thermiques, soudage et CND.",es:"Impartí procesos de fabricación y ciencia de materiales a estudiantes de ingeniería, con prácticas de laboratorio de ensayos mecánicos, tratamientos térmicos, soldadura y END.",de:"Ich habe Ingenieurstudierende in Fertigungsverfahren und Werkstoffwissenschaft unterrichtet, einschließlich Laborpraktika zu mechanischer Prüfung, Wärmebehandlung, Schweißen und ZfP."},
+ tags:["NDT","Teaching"]},
+{when:"2016 – 2017",org:"NIT Warangal · {IN}",
+ t:{en:"Teaching Assistant, Mechanical Engineering",it:"Assistente alla didattica, Ingegneria meccanica",fr:"Assistant d'enseignement, génie mécanique",es:"Asistente de docencia, Ingeniería Mecánica",de:"Lehrassistent, Maschinenbau"},
+ d:{en:"I ran extra lessons for small groups, helped the professor prepare practical assignments and kept student records up to date.",it:"Ho tenuto lezioni aggiuntive per piccoli gruppi, aiutato il docente a preparare le esercitazioni pratiche e aggiornato i registri degli studenti.",fr:"J'ai assuré des cours supplémentaires en petits groupes, aidé le professeur à préparer les travaux pratiques et tenu à jour le suivi des étudiants.",es:"Impartí clases de refuerzo a grupos reducidos, ayudé al profesor a preparar las prácticas y mantuve al día los registros de los estudiantes.",de:"Ich habe Zusatzunterricht für kleine Gruppen gegeben, den Professor bei der Vorbereitung praktischer Übungen unterstützt und die Studierendenunterlagen gepflegt."},
+ tags:["Teaching"]},
+{when:"02/2014 – 09/2014",org:"Tata Motors · {IN}",
+ t:{en:"Project Assistant",it:"Assistente di progetto",fr:"Assistant de projet",es:"Asistente de proyecto",de:"Projektassistent"},
+ d:{en:"I worked with the Kaizen Promotion Division on real shop-floor problems: cutting the top repainting defects in the paint shop, taking three minutes out of the trim line, and fixing fastener rusting, shower-test leaks and wheel alignment issues. I also ran a Six Sigma project on auto-adjuster performance and used the 8D method to close out non-conformities.",it:"Con la Kaizen Promotion Division ho lavorato su problemi concreti di reparto: riduzione dei principali difetti di riverniciatura, tre minuti in meno sulla linea di finitura, e soluzione dei problemi di ruggine sui fissaggi, infiltrazioni al test doccia e allineamento ruote. Ho inoltre sviluppato un progetto Six Sigma sulle prestazioni dell'auto-adjuster e gestito le non conformità con il metodo 8D.",fr:"Avec la Kaizen Promotion Division, j'ai traité des problèmes concrets d'atelier : réduction des principaux défauts de retouche peinture, trois minutes gagnées sur la ligne d'habillage, et résolution de la rouille des fixations, des infiltrations au test d'arrosage et des défauts de géométrie des roues. J'ai aussi mené un projet Six Sigma sur le rattrapeur automatique et traité les non-conformités avec la méthode 8D.",es:"Con la Kaizen Promotion Division trabajé en problemas reales de planta: reducir los principales defectos de repintado, recortar tres minutos en la línea de guarnecido y resolver el óxido en fijaciones, las filtraciones en la prueba de ducha y la alineación de ruedas. También desarrollé un proyecto Six Sigma sobre el autoajustador y resolví no conformidades con el método 8D.",de:"Mit der Kaizen Promotion Division habe ich an konkreten Problemen in der Fertigung gearbeitet: die häufigsten Nachlackierfehler reduziert, drei Minuten an der Trim-Linie eingespart sowie Rost an Befestigungselementen, Undichtigkeiten bei der Beregnungsprüfung und Probleme bei der Achsvermessung behoben. Außerdem habe ich ein Six-Sigma-Projekt zum automatischen Nachsteller durchgeführt und Abweichungen mit der 8D-Methode abgestellt."},
+ tags:["Kaizen","Six Sigma","8D"]},
+{when:"06/2013 – 07/2013",org:"Instruments Research & Development Establishment (IRDE), DRDO · {IN}",
+ t:{en:"Research Intern",it:"Tirocinante di ricerca",fr:"Stagiaire de recherche",es:"Becario de investigación",de:"Forschungspraktikant"},
+ d:{en:"I studied whether 3D-printed (RPT) patterns could replace conventional patterns in investment casting, and worked with high-precision machines including single-point diamond turning (SPDT) and CNC.",it:"Ho studiato la possibilità di usare modelli stampati in 3D (RPT) al posto dei modelli tradizionali nella microfusione, lavorando con macchine di alta precisione come la tornitura con utensile diamantato (SPDT) e CNC.",fr:"J'ai étudié la possibilité de remplacer les modèles classiques de fonderie à cire perdue par des modèles imprimés en 3D (RPT), et travaillé sur des machines de haute précision comme le tournage diamant (SPDT) et la CNC.",es:"Estudié si los modelos impresos en 3D (RPT) podían sustituir a los modelos convencionales en la fundición a la cera perdida, y trabajé con máquinas de alta precisión como el torneado con diamante (SPDT) y CNC.",de:"Ich habe untersucht, ob 3D-gedruckte Modelle (RPT) herkömmliche Modelle im Feinguss ersetzen können, und mit Hochpräzisionsmaschinen wie Diamantdrehen (SPDT) und CNC gearbeitet."},
+ tags:["3D printing","Investment casting","SPDT"]},
+{when:"06/2011 – 07/2011",org:"National Bearing Corporation (NBC) · {IN}",
+ t:{en:"Research Intern",it:"Tirocinante di ricerca",fr:"Stagiaire de recherche",es:"Becario de investigación",de:"Forschungspraktikant"},
+ d:{en:"I investigated quality defects in bearing production using fishbone root-cause analysis and a universal horizontal microscope, and learned the grinding and honing processes used on the line.",it:"Ho analizzato i difetti di qualità nella produzione di cuscinetti con il diagramma a spina di pesce e un microscopio orizzontale universale, imparando i processi di rettifica e levigatura della linea.",fr:"J'ai analysé les défauts qualité de la production de roulements à l'aide du diagramme d'Ishikawa et d'un microscope horizontal universel, et découvert les procédés de rectification et de rodage de la ligne.",es:"Analicé defectos de calidad en la producción de rodamientos con el diagrama de espina de pescado y un microscopio horizontal universal, y aprendí los procesos de rectificado y bruñido de la línea.",de:"Ich habe Qualitätsfehler in der Wälzlagerfertigung mit Ishikawa-Analyse und einem Universal-Horizontalmikroskop untersucht und die Schleif- und Honprozesse der Linie kennengelernt."},
+ tags:["Quality","Grinding","Microscopy"]}
+];
+
+const EDU=[
+{when:"10/2025 – 08/2026",org:"Consorzio Emmanuel S.c.a r.l. · {IT}",
+ t:{en:"Higher Technical Specialisation (IFTS): Economic & Financial Administration",it:"IFTS – Tecniche per l'amministrazione economico-finanziaria",fr:"Spécialisation technique supérieure (IFTS) : administration économique et financière",es:"Especialización técnica superior (IFTS): administración económico-financiera",de:"Höhere technische Spezialisierung (IFTS): Wirtschafts- und Finanzverwaltung"},
+ d:{en:"Course IFTS25.LE.19, information and communication technologies track.",it:"Corso IFTS25.LE.19, area Tecnologie dell'informazione e della comunicazione.",fr:"Formation IFTS25.LE.19, filière technologies de l'information et de la communication.",es:"Curso IFTS25.LE.19, área de tecnologías de la información y la comunicación.",de:"Kurs IFTS25.LE.19, Bereich Informations- und Kommunikationstechnologien."},tags:["EQF 4"]},
+{when:"01/2022 – 12/2024",org:"Università del Salento · {IT}",t:{en:"PhD (Dottore di Ricerca)",it:"Dottorato di ricerca",fr:"Doctorat (PhD)",es:"Doctorado (PhD)",de:"Promotion (PhD)"},
+ d:{en:"PhD in Complex Systems Engineering (37th cycle), Department of Innovation Engineering, funded by a green and innovation fellowship from the Italian Ministry of University and Research. My research looked at scanning strategies for selective laser melting, combining metallurgical analysis with simulation.",it:"Dottorato in Ingegneria dei Sistemi Complessi (XXXVII ciclo), Dipartimento di Ingegneria dell'Innovazione, con borsa green e innovazione del Ministero dell'Università e della Ricerca. La ricerca ha riguardato le strategie di scansione nella fusione laser selettiva, unendo analisi metallurgica e simulazione.",fr:"Doctorat en ingénierie des systèmes complexes (37e cycle), département d'ingénierie de l'innovation, financé par une bourse « green et innovation » du ministère italien de l'Université et de la Recherche. Mes travaux portaient sur les stratégies de balayage en fusion laser sélective, en associant analyse métallurgique et simulation.",es:"Doctorado en Ingeniería de Sistemas Complejos (ciclo 37), Departamento de Ingeniería de la Innovación, con una beca verde y de innovación del Ministerio de Universidad e Investigación de Italia. Mi investigación estudió las estrategias de escaneo en la fusión selectiva por láser, combinando análisis metalúrgico y simulación.",de:"Promotion in Complex Systems Engineering (37. Zyklus), Fachbereich Innovationsingenieurwesen, gefördert durch ein Green-&-Innovation-Stipendium des italienischen Ministeriums für Universität und Forschung. Meine Forschung befasste sich mit Scanstrategien beim selektiven Laserschmelzen und verband metallurgische Analyse mit Simulation."},tags:["EQF 8"]},
+{when:"09/2022 – 03/2023",org:"Universidad de León · {ES}",t:{en:"Doctoral exchange period",it:"Periodo di scambio dottorale",fr:"Séjour d'échange doctoral",es:"Estancia de intercambio doctoral",de:"Doktoranden-Austauschaufenthalt"},
+ d:{en:"Department of Mechanical and Aerospace Engineering. I worked on selective laser melting of 17-4PH and on 3D printing with polymers, ceramics and metals, and studied Spanish to A1 level.",it:"Dipartimento di Ingegneria Meccanica e Aerospaziale. Ho lavorato sulla fusione laser selettiva del 17-4PH e sulla stampa 3D di polimeri, ceramiche e metalli, studiando anche lo spagnolo (livello A1).",fr:"Département de génie mécanique et aérospatial. J'ai travaillé sur la fusion laser sélective du 17-4PH et sur l'impression 3D de polymères, céramiques et métaux, et j'ai appris l'espagnol (niveau A1).",es:"Departamento de Ingeniería Mecánica y Aeroespacial. Trabajé en fusión selectiva por láser del 17-4PH y en impresión 3D de polímeros, cerámicas y metales, y estudié español hasta el nivel A1.",de:"Fachbereich Maschinenbau und Luft- und Raumfahrttechnik. Ich habe am selektiven Laserschmelzen von 17-4PH sowie am 3D-Druck von Polymeren, Keramik und Metallen gearbeitet und Spanisch bis Niveau A1 gelernt."},tags:["EQF 8"]},
+{when:"2018 – 2020",org:"Southwest Petroleum University (SWPU) · {CN}",t:{en:"Certificate in Materials Science",it:"Certificato in Scienza dei Materiali",fr:"Certificat en science des matériaux",es:"Certificado en Ciencia de Materiales",de:"Zertifikat in Werkstoffwissenschaft"},
+ d:{en:"School of Materials Science and Engineering. GPA 5.5/6.",it:"School of Materials Science and Engineering. Media 5,5/6.",fr:"School of Materials Science and Engineering. Moyenne 5,5/6.",es:"School of Materials Science and Engineering. Nota media 5,5/6.",de:"School of Materials Science and Engineering. Notendurchschnitt 5,5/6."},tags:["GPA 5.5/6"]},
+{when:"08/2015 – 06/2017",org:"NIT Warangal · {IN}",t:{en:"M.Tech, Materials Technology",it:"M.Tech in Tecnologia dei Materiali",fr:"M.Tech en technologie des matériaux",es:"M.Tech en Tecnología de Materiales",de:"M.Tech in Werkstofftechnik"},
+ d:{en:"Department of Metallurgical and Materials Engineering. My thesis optimised friction stir welding of dissimilar non-ferrous metals with the Taguchi method. Funded by a two-year GATE scholarship (MHRD, Government of India).",it:"Dipartimento di Ingegneria Metallurgica e dei Materiali. La tesi ha riguardato l'ottimizzazione della saldatura per attrito di metalli non ferrosi dissimili con il metodo Taguchi. Borsa di studio GATE biennale (MHRD, Governo indiano).",fr:"Département de génie métallurgique et des matériaux. Mon mémoire portait sur l'optimisation du soudage par friction-malaxage de métaux non ferreux dissemblables par la méthode Taguchi. Bourse GATE de deux ans (MHRD, gouvernement indien).",es:"Departamento de Ingeniería Metalúrgica y de Materiales. Mi tesis optimizó la soldadura por fricción-agitación de metales no ferrosos disímiles con el método Taguchi. Beca GATE de dos años (MHRD, Gobierno de la India).",de:"Fachbereich Metallurgie und Werkstofftechnik. Meine Abschlussarbeit optimierte das Rührreibschweißen ungleicher Nichteisenmetalle mit der Taguchi-Methode. Zweijähriges GATE-Stipendium (MHRD, indische Regierung)."},tags:["EQF 7"]},
+{when:"07/2010 – 06/2014",org:"Maharshi Dayanand University · {IN}",t:{en:"B.Tech, Mechanical Engineering",it:"B.Tech in Ingegneria Meccanica",fr:"B.Tech en génie mécanique",es:"B.Tech en Ingeniería Mecánica",de:"B.Tech in Maschinenbau"},
+ d:{en:"Best Student Award, 2014 batch.",it:"Premio Best Student, corso 2014.",fr:"Prix du meilleur étudiant, promotion 2014.",es:"Premio al Mejor Estudiante, promoción 2014.",de:"Auszeichnung als bester Student, Jahrgang 2014."},tags:["EQF 6","GPA 8/10"]}
+];
+
+const PROJ=[
+{t:{en:"Powder-bed fusion of aerospace alloys",it:"Fusione a letto di polvere di leghe aerospaziali",fr:"Fusion sur lit de poudre d'alliages aéronautiques",es:"Fusión en lecho de polvo de aleaciones aeroespaciales",de:"Pulverbettschmelzen von Luftfahrtlegierungen"},
+ d:{en:"Aluminium, ferrous and titanium alloy samples on a Renishaw AM 400, with post-build heat treatment and Micro-CT porosity inspection.",it:"Campioni in leghe di alluminio, ferrose e di titanio su Renishaw AM 400, con trattamenti termici post-costruzione e analisi della porosità con Micro-CT.",fr:"Échantillons en alliages d'aluminium, ferreux et de titane sur Renishaw AM 400, avec traitements thermiques après fabrication et contrôle de la porosité par micro-CT.",es:"Probetas de aleaciones de aluminio, ferrosas y de titanio en Renishaw AM 400, con tratamientos térmicos posteriores e inspección de porosidad por micro-CT.",de:"Proben aus Aluminium-, Eisen- und Titanlegierungen auf einer Renishaw AM 400 mit Wärmebehandlung und Porositätsprüfung per Mikro-CT."},tags:["L-PBF","Renishaw AM 400","Micro-CT"]},
+{t:{en:"Incremental forming of Ti Grade 2 and DC04",it:"Formatura incrementale di Ti Grado 2 e DC04",fr:"Formage incrémental du Ti grade 2 et du DC04",es:"Conformado incremental de Ti grado 2 y DC04",de:"Inkrementelle Umformung von Ti Grade 2 und DC04"},
+ d:{en:"Improving SPIF repeatability on a CNC milling machine, combining experiments with numerical simulation to tune process parameters.",it:"Miglioramento della riproducibilità della SPIF su fresatrice CNC, combinando prove sperimentali e simulazioni numeriche per ottimizzare i parametri.",fr:"Amélioration de la répétabilité du SPIF sur fraiseuse CNC, en combinant essais et simulation numérique pour ajuster les paramètres.",es:"Mejora de la repetibilidad del SPIF en fresadora CNC, combinando ensayos y simulación numérica para ajustar los parámetros.",de:"Verbesserung der Wiederholgenauigkeit der SPIF auf einer CNC-Fräsmaschine durch Kombination von Versuchen und numerischer Simulation."},tags:["SPIF","CNC","Simulation","NDT"]},
+{t:{en:"Friction stir welding for marine applications",it:"Saldatura per attrito per applicazioni navali",fr:"Soudage par friction-malaxage pour applications marines",es:"Soldadura por fricción-agitación para aplicaciones marinas",de:"Rührreibschweißen für maritime Anwendungen"},
+ d:{en:"Parameter optimisation with the Taguchi method, corrosion and NDT analysis, tool design, and underwater and dry-ice welding trials.",it:"Ottimizzazione dei parametri con il metodo Taguchi, analisi di corrosione e CND, progettazione degli utensili e prove di saldatura subacquea e con ghiaccio secco.",fr:"Optimisation des paramètres par la méthode Taguchi, analyses de corrosion et CND, conception d'outils, essais de soudage sous l'eau et à la glace carbonique.",es:"Optimización de parámetros con el método Taguchi, análisis de corrosión y END, diseño de herramientas y ensayos de soldadura subacuática y con hielo seco.",de:"Parameteroptimierung nach Taguchi, Korrosions- und ZfP-Analyse, Werkzeugkonstruktion sowie Unterwasser- und Trockeneis-Schweißversuche."},tags:["FSW","Taguchi","NDT","Corrosion"]},
+{t:{en:"3D-printed patterns for investment casting",it:"Modelli stampati in 3D per microfusione",fr:"Modèles imprimés en 3D pour la fonderie à cire perdue",es:"Modelos impresos en 3D para fundición a la cera perdida",de:"3D-gedruckte Modelle für den Feinguss"},
+ d:{en:"Feasibility study of rapid prototyping (RPT) patterns as a replacement for conventional wax patterns in investment casting.",it:"Studio di fattibilità di modelli da prototipazione rapida (RPT) in sostituzione dei modelli in cera nella microfusione.",fr:"Étude de faisabilité de modèles issus du prototypage rapide (RPT) pour remplacer les modèles en cire en fonderie de précision.",es:"Estudio de viabilidad de modelos de prototipado rápido (RPT) como sustitutos de los modelos de cera en fundición.",de:"Machbarkeitsstudie zu Rapid-Prototyping-Modellen (RPT) als Ersatz für Wachsmodelle im Feinguss."},tags:["3D printing","Casting","CAD"]},
+{t:{en:"Materials quality testing by microscopy",it:"Controllo qualità dei materiali al microscopio",fr:"Contrôle qualité des matériaux par microscopie",es:"Control de calidad de materiales por microscopía",de:"Werkstoffprüfung mittels Mikroskopie"},
+ d:{en:"Quality inspection of engineering materials using a universal horizontal microscope.",it:"Ispezione qualitativa di materiali ingegneristici con un microscopio orizzontale universale.",fr:"Inspection qualité de matériaux d'ingénierie avec un microscope horizontal universel.",es:"Inspección de calidad de materiales de ingeniería con un microscopio horizontal universal.",de:"Qualitätsprüfung technischer Werkstoffe mit einem Universal-Horizontalmikroskop."},tags:["Metallography","QA"]},
+{t:{en:"Kaizen productivity improvement",it:"Miglioramento della produttività Kaizen",fr:"Amélioration de la productivité Kaizen",es:"Mejora de la productividad Kaizen",de:"Kaizen-Produktivitätssteigerung"},
+ d:{en:"Productivity improvements across several shops at Tata Motors under the Kaizen Promotion Division.",it:"Miglioramenti di produttività in diversi reparti Tata Motors con la Kaizen Promotion Division.",fr:"Gains de productivité dans plusieurs ateliers de Tata Motors avec la Kaizen Promotion Division.",es:"Mejoras de productividad en varios talleres de Tata Motors con la Kaizen Promotion Division.",de:"Produktivitätsverbesserungen in mehreren Werkstätten von Tata Motors mit der Kaizen Promotion Division."},tags:["Kaizen","Lean","Tata Motors"]}
+];
+
+const AWARDS=[
+["2026",{en:"__MDPI__"},null],
+["",{en:"Best Researcher Award"},{en:"environmentalscientists.org"}],
+["2022",{en:"Green-theme innovation project, PON (DM 1061/2021)",it:"Progetto di innovazione a tema green, PON (DM 1061/2021)",fr:"Projet d'innovation thème vert, PON (DM 1061/2021)",es:"Proyecto de innovación temática verde, PON (DM 1061/2021)",de:"Innovationsprojekt Green Theme, PON (DM 1061/2021)"},{en:"Government of Italy & European Union",it:"Governo italiano e Unione Europea",fr:"Gouvernement italien et Union européenne",es:"Gobierno de Italia y Unión Europea",de:"Italienische Regierung & Europäische Union"}],
+["2021",{en:"Junior Research Fellowship, DST-SERB funded project",it:"Junior Research Fellowship, progetto finanziato DST-SERB",fr:"Junior Research Fellowship, projet financé par le DST-SERB",es:"Junior Research Fellowship, proyecto financiado por DST-SERB",de:"Junior Research Fellowship, DST-SERB-gefördertes Projekt"},{en:"Government of India",it:"Governo indiano",fr:"Gouvernement indien",es:"Gobierno de la India",de:"Indische Regierung"}],
+["2020",{en:"Best Paper Award",it:"Premio Best Paper",fr:"Prix du meilleur article",es:"Premio al Mejor Artículo",de:"Best Paper Award"},{en:"International Conference on Innovative Engineering Design",it:"Conferenza internazionale sulla progettazione ingegneristica innovativa",fr:"Conférence internationale sur la conception innovante en ingénierie",es:"Congreso internacional de diseño de ingeniería innovador",de:"Internationale Konferenz für innovative Ingenieurkonstruktion"}],
+["2019",{en:"Young Researcher Award",it:"Premio giovani ricercatori",fr:"Prix du jeune chercheur",es:"Premio a Jóvenes Investigadores",de:"Nachwuchsforscherpreis"},{en:"Sichuan Provincial Government, China",it:"Governo del Sichuan, Cina",fr:"Gouvernement du Sichuan, Chine",es:"Gobierno de Sichuan, China",de:"Provinzregierung Sichuan, China"}],
+["2019",{en:"Summer school scholarship, Mathematical Crystallography",it:"Borsa per la scuola estiva di cristallografia matematica",fr:"Bourse pour l'école d'été de cristallographie mathématique",es:"Beca para la escuela de verano de cristalografía matemática",de:"Stipendium für die Sommerschule Mathematische Kristallographie"},{en:"International Union of Crystallography (IUCr), France",it:"Unione Internazionale di Cristallografia (IUCr), Francia",fr:"Union internationale de cristallographie (IUCr), France",es:"Unión Internacional de Cristalografía (IUCr), Francia",de:"Internationale Union für Kristallographie (IUCr), Frankreich"}],
+["2019",{en:"1st prize, inter-school speech competition",it:"1° premio, concorso di discorsi interscolastico",fr:"1er prix, concours d'éloquence inter-écoles",es:"1.er premio, concurso de oratoria interescolar",de:"1. Preis, schulübergreifender Redewettbewerb"},{en:"SWPU, Chengdu, China",it:"SWPU, Chengdu, Cina",fr:"SWPU, Chengdu, Chine",es:"SWPU, Chengdu, China",de:"SWPU, Chengdu, China"}],
+["2016",{en:"1st prize, essay writing competition",it:"1° premio, concorso di scrittura di saggi",fr:"1er prix, concours de rédaction",es:"1.er premio, concurso de ensayo",de:"1. Preis, Essaywettbewerb"},{en:"NIT Warangal, India",it:"NIT Warangal, India",fr:"NIT Warangal, Inde",es:"NIT Warangal, India",de:"NIT Warangal, Indien"}],
+["2016",{en:"2nd prize, Inter-NIT athletics meet",it:"2° premio, meeting di atletica Inter-NIT",fr:"2e prix, rencontre d'athlétisme inter-NIT",es:"2.º premio, encuentro atlético Inter-NIT",de:"2. Preis, Inter-NIT-Leichtathletiktreffen"},{en:"NIT Kurukshetra, India",it:"NIT Kurukshetra, India",fr:"NIT Kurukshetra, Inde",es:"NIT Kurukshetra, India",de:"NIT Kurukshetra, Indien"}],
+["2015",{en:"GATE M.Tech scholarship, 2 years",it:"Borsa di studio GATE M.Tech, 2 anni",fr:"Bourse GATE M.Tech, 2 ans",es:"Beca GATE M.Tech, 2 años",de:"GATE-M.Tech-Stipendium, 2 Jahre"},{en:"MHRD, Government of India",it:"MHRD, Governo indiano",fr:"MHRD, gouvernement indien",es:"MHRD, Gobierno de la India",de:"MHRD, indische Regierung"}],
+["2014",{en:"Best Student Award, B.Tech Mechanical Engineering",it:"Premio Best Student, B.Tech Ingegneria Meccanica",fr:"Prix du meilleur étudiant, B.Tech génie mécanique",es:"Premio al Mejor Estudiante, B.Tech Ingeniería Mecánica",de:"Bester Student, B.Tech Maschinenbau"},{en:"New Delhi, India",it:"Nuova Delhi, India",fr:"New Delhi, Inde",es:"Nueva Delhi, India",de:"Neu-Delhi, Indien"}],
+["2003–10",{en:"National Cadet Corps, 8 years of training (Army, Air & Navy wings)",it:"National Cadet Corps, 8 anni di addestramento (Esercito, Aeronautica e Marina)",fr:"National Cadet Corps, 8 ans de formation (Terre, Air et Marine)",es:"National Cadet Corps, 8 años de formación (Ejército, Aire y Marina)",de:"National Cadet Corps, 8 Jahre Ausbildung (Heer, Luftwaffe & Marine)"},{en:"Ministry of Defence, Government of India",it:"Ministero della Difesa, Governo indiano",fr:"Ministère de la Défense, gouvernement indien",es:"Ministerio de Defensa, Gobierno de la India",de:"Verteidigungsministerium, indische Regierung"}]
+];
+
+const CONFS=[
+["12/2024",{en:"Seminar",it:"Seminario",fr:"Séminaire",es:"Seminario",de:"Seminar"},"Metals and Life: Biocompatibility, Biocorrosion, Oligodynamic Effect and Beyond · Tasan Group, DMSE, MIT, USA"],
+["04/2024",{en:"Participant",it:"Partecipante",fr:"Participant",es:"Participante",de:"Teilnehmer"},"MCHTSE 2024 & TPMS-5 · Italy"],
+["02/2024",{en:"Invited talk",it:"Relazione su invito",fr:"Conférence invitée",es:"Ponencia invitada",de:"Eingeladener Vortrag"},"The Material Evolution in 3D Printing: A Cutting-Edge Examination and Future Application Scenarios · 58th Assembly of the Advanced Materials Congress (IAAM), USA"],
+["10/2023",{en:"Student competition",it:"Concorso per studenti",fr:"Concours étudiant",es:"Concurso de estudiantes",de:"Studierendenwettbewerb"},"Optimizing SLM process parameters and post-processing of 17-4 PH parts · ASTM ICAM 2023, USA"],
+["2023",{en:"Oral presentation (co-author)",it:"Presentazione orale (coautore)",fr:"Présentation orale (co-auteur)",es:"Ponencia oral (coautor)",de:"Vortrag (Mitautor)"},"Sandblasting post-process of SLM 17-4PH parts with different scanning strategies · MESIC 2023"],
+["01/2020",{en:"Oral presentation · Best Paper Award",it:"Presentazione orale · Best Paper Award",fr:"Présentation orale · Best Paper Award",es:"Ponencia oral · Best Paper Award",de:"Vortrag · Best Paper Award"},"Internal surface error detection by NDT methods for hybrid joints made by friction stir butt welding · ICoIED 2020, India"],
+["06/2019",{en:"Poster",it:"Poster",fr:"Poster",es:"Póster",de:"Poster"},"X-ray diffraction characterisation of the metastable Al4Cu9 phase in a hybrid friction stir weld · IUCr-CMTC, France"],
+["12/2018",{en:"Oral presentation",it:"Presentazione orale",fr:"Présentation orale",es:"Ponencia oral",de:"Vortrag"},"Al4Cu9 intermetallic and the corrosion rate of Mg-Al alloy to copper FSW joints · NACE International CPPCPTEC, China"],
+["12/2016",{en:"Poster",it:"Poster",fr:"Poster",es:"Póster",de:"Poster"},"Localized corrosion of various metals in aggressive environments: a case study · NFTDC International Conference, India"],
+["",{en:"Oral presentation (online)",it:"Presentazione orale (online)",fr:"Présentation orale (en ligne)",es:"Ponencia oral (en línea)",de:"Vortrag (online)"},"Global Trends in Additive Manufacturing: Feasibility and Challenges Across Biomedical and Aerospace Applications · International Conclave on Materials, Energy and Climate, IGDTUW, India"]
+];
+const CERTS=[
+["08/2026","AI Foundation Course","JioPC"],
+["06/2025","METAL: Metallurgical Engineering Trades Apprenticeship & Learning","IACMI – The Composites Institute"],
+["06/2025","ISO 27001 Lead Auditor","MindLuster"],
+["06/2025","ISO 14001:2015 Environmental Management Systems (EMS)","Alison"],
+["06/2025","Quality Assurance (QA): Techniques and Methodologies","Alison"],
+["06/2025","Lean Six Sigma White Belt","Council for Six Sigma Certification (CSSC)"],
+["06/2025","Six Sigma White Belt","Council for Six Sigma Certification (CSSC)"],
+["04/2025","Communicating Science for Policy","George Mason University · Costello College of Business"],
+["03/2025","Certified Peer Reviewer Course","Elsevier"],
+["03/2025","Certification of Funding","Elsevier"],
+["03/2025","Scopus Academy: Metrics Module","Elsevier"],
+["03/2025","NASA Open Science","NASA"],
+["03/2025","GE Aerospace: Explore Engineering Job Simulation","Forage"],
+["01/2025","Additive Manufacturing, advanced-level technology course","The Open University"],
+["01/2025","Manufacturing Technologies","Alison"],
+["01/2025","Circular Economy for the Waste Sector in South Africa","UNITAR"],
+["02/2024","MATLAB Fundamentals","MathWorks"],
+["12/2022","Getting Started with ImageJ","Coursera Project Network"],
+["04/2022","Pre-Research PhD Internship","Institute of Advanced Materials (IAAM)"],
+["09/2021","Introduction to Programming Using Python","Sololearn"],
+["11/2020","Switch Mode Power Supply Testing 101","Keysight Technologies"],
+["09/2020","The Fundamentals of Digital Marketing","Google Digital Garage"]
+];
+const MEMS=[
+["11/2024",{en:"Delegate, Young Ambassadors Society at WFF 2024",it:"Delegato, Young Ambassadors Society al WFF 2024",fr:"Délégué, Young Ambassadors Society au WFF 2024",es:"Delegado, Young Ambassadors Society en el WFF 2024",de:"Delegierter, Young Ambassadors Society beim WFF 2024"},""],
+["2023",{en:"ASTM International"},{en:"Student member",it:"Socio studente",fr:"Membre étudiant",es:"Miembro estudiante",de:"Studentisches Mitglied"}],
+["2019",{en:"International Union of Crystallography (IUCr)"},""],
+["2017",{en:"NACE International"},""],
+["",{en:"International Association of Engineers (IAENG)"},""],["2015–",{en:"United Nations Volunteers (UNV)"},{en:"Technical support volunteer",it:"Volontario, supporto tecnico",fr:"Bénévole, support technique",es:"Voluntario, soporte técnico",de:"Ehrenamtlich, technischer Support"}],["2015–16","Innovation & Incubation Club","NIT Warangal"],
+["2012–14",{en:"Sports club: 100 m sprint and volleyball",it:"Club sportivo: 100 metri e pallavolo",fr:"Club de sport : 100 m et volley-ball",es:"Club deportivo: 100 metros y voleibol",de:"Sportverein: 100-m-Lauf und Volleyball"},""],
+["2010–13",{en:"Weekend science, maths and English lessons for primary-school pupils",it:"Lezioni nel fine settimana di scienze, matematica e inglese per alunni della primaria",fr:"Cours du week-end en sciences, maths et anglais pour des élèves du primaire",es:"Clases de fin de semana de ciencias, matemáticas e inglés para alumnos de primaria",de:"Wochenendunterricht in Naturwissenschaften, Mathematik und Englisch für Grundschüler"},""]];
+
+const PREP=[
+"Effect of Heat Treatment and Scanning Strategy on the Corrosion Properties of SLM-Processed Martensitic 17-4PH"
+];
+const TESTS=[["04/2021","GRE","Verbal 138 · Quant 161 · AW 3.5"],["04/2021","TOEFL","93 / 120"],["2014","GATE","95%"]];
+const SOCIAL=[["LinkedIn","https://www.linkedin.com/in/neetesh-soni-67b48223/","in"],["Google Scholar","https://scholar.google.com/citations?user=960sfJUAAAAJ","sch"],["GitHub","https://github.com/ntnsoni7","gh"],["Università del Salento","https://www.unisalento.it/people/neetesh.soni","uni"]];
+const ICON={in:'<rect x="3" y="4.5" width="18" height="15" rx="2"/><circle cx="9" cy="10.5" r="2.2"/><path d="M5.6 16.5c.6-1.8 1.9-2.8 3.4-2.8s2.8 1 3.4 2.8M14.5 9.5h4M14.5 13h4"/>',sch:'<path d="M2 9.5 12 4.5l10 5-10 5z"/><path d="M6 11.5v4.3c0 1.4 2.7 2.7 6 2.7s6-1.3 6-2.7v-4.3M22 9.5v5"/>',gh:'<path d="M8 7.5 3.5 12 8 16.5M16 7.5l4.5 4.5-4.5 4.5M13.5 5l-3 14"/>',uni:'<path d="M3 9 12 4l9 5M5 9.5v8.5M9.5 9.5v8.5M14.5 9.5v8.5M19 9.5v8.5M3 20.5h18"/>'};
+const COUNTRY={IT:{en:"Italy",it:"Italia",fr:"Italie",es:"Italia",de:"Italien"},SE:{en:"Sweden",it:"Svezia",fr:"Suède",es:"Suecia",de:"Schweden"},IN:{en:"India",it:"India",fr:"Inde",es:"India",de:"Indien"},CN:{en:"China",it:"Cina",fr:"Chine",es:"China",de:"China"},ES:{en:"Spain",it:"Spagna",fr:"Espagne",es:"España",de:"Spanien"}};
+const WORKSHOPS=[
+["09/2024","AS3 Automotive Software Summer School","Università del Salento · Nardò Technical Center (Porsche Engineering)"],
+["05/2024","Horizon Europe: Marie Skłodowska-Curie Actions (MSCA)","APRE"],
+["10/2023","Principles of Sinter-Based AM, short course","ASTM ICAM 2023 · Oak Ridge National Laboratory"],
+["07/2023","Computational Materials Science Summer School (CMS3)","Texas A&M University (online)"],
+["08/2022","Friction Stir Welding: advantages, limitations and latest innovations","IEEE Consultants Network Malaysia"],
+["2022","CI-LAM Summer School on Advanced Manufacturing (6 CFU)","University of Bergamo · University of Naples Federico II · Tsinghua University"],
+["2022","Metallurgy Summer School: Surface Engineering of Metals (4 CFU)","Associazione Italiana di Metallurgia (AIM)"],
+["","Advanced Technologies and Additive Manufacturing for Aerospace (90 h, 9 CFU)","Università del Salento"],
+["","Electrochemical Technology (90 h, 9 CFU)","Università del Salento"],
+["","Tools for Bibliographic Analysis (20 h, 4 CFU)","Università del Salento"],
+["","Workshop on remotely piloted aircraft, CESARE test centre","Università del Salento"],
+["","Italian language, A1–A2 (60 h)","CLA · Università del Salento"],
+["","Spanish language, A1","Universidad de León"],
+["2019","Summer School on Mathematical and Theoretical Crystallography","IUCr · University of Lorraine"],
+["","SEM operation and microstructure analysis, licence course (45 days)","SWPU · {CN}"],
+["","Chinese (Mandarin) HSK 1, 89%","SWPU · {CN}"],
+["","MIG/MAG welding and its variants","Indian Institute of Welding · IIT Delhi"],
+["","Equilibrium and phase transformations of metallic alloys","IIT Hyderabad"],
+["","Powder metallurgy and advanced composites","IIT Hyderabad"],
+["","Advanced functional materials: characterisation and applications","TEQIP · NIT Jaipur"],
+["","Density functional theory and its applications using Gaussian","TEQIP · NIT Jaipur"]
+];
+let lang="en", filter="all";
+const L=v=>typeof v==="string"?v:(v[lang]||v.en);
+const CT=s=>String(s).replace(/\{(IT|SE|IN|CN|ES)\}/g,(_,c)=>COUNTRY[c][lang]);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const $=id=>document.getElementById(id);
+
+function renderLangs(){
+  const t=T[lang],rows=[`<div class="mono" style="color:var(--accent)">${esc(t.langs_h)}</div>`];
+  NATIVE_ORDER.forEach(i=>rows.push(`<div class="langrow"><span>${esc(t.lang_names[i])}</span><span>${LEVELS[i]==="HSK"?esc(t.hsk):(LEVELS[i]||esc(t.native))}</span></div>`));
+  $("langs").innerHTML=rows.join("");
+}
+function renderSkills(){
+  $("skillgrid").innerHTML=SKILL_CATS.map(k=>`<div class="skillcat"><h3>${esc(T[lang]["cat_"+k])}</h3><div class="chips">${SKILLS[k].map(([n,c])=>`<span class="chip ${c?"core":"explore"}">${esc(L(n))}</span>`).join("")}</div></div>`).join("");
+}
+function renderFilters(){
+  const keys=["all","am","corr","weld","sus"];
+  $("filters").innerHTML=keys.map(k=>{const n=k==="all"?PUBS.length:PUBS.filter(p=>p[2].includes(k)).length;
+    return `<button type="button" data-f="${k}" aria-pressed="${k===filter}">${esc(T[lang]["f_"+k])}<span class="n">${n}</span></button>`}).join("");
+}
+function renderPubs(){
+  $("pubs").innerHTML=PUBS.filter(p=>filter==="all"||p[2].includes(filter)).map(([y,t,tags,v,doi,aw])=>
+    `<li class="pub"><span class="yr">${y}</span><div><div class="t">${doi?`<a href="${doi}" target="_blank" rel="noopener">${esc(t)}</a>`:esc(t)}</div>${v?`<div class="v">${esc(v)}</div>`:""}${aw?`<div class="award">${esc(T[lang].award_badge)}</div>`:""}<div class="tags">${tags.map(g=>`<span>${esc(T[lang]["f_"+g])}</span>`).join("")}</div></div></li>`).join("");
+}
+function renderJobs(){
+  $("timeline").innerHTML=JOBS.map(tl).join("");
+}
+function tl(j){return `<li class="tl"><div class="when">${j.when}</div><h3>${esc(L(j.t))}</h3><div class="org">${esc(CT(j.org))}</div><p>${esc(L(j.d))}</p>${j.tags?`<div class="tags">${j.tags.map(g=>`<span>${esc(g)}</span>`).join("")}</div>`:""}</li>`}
+function card(o){return `<article class="card">${o.when?`<div class="when">${o.when}</div>`:""}<h3>${esc(L(o.t))}</h3>${o.org?`<div class="org">${esc(o.org)}</div>`:""}<p>${esc(L(o.d))}</p>${o.tags?`<div class="tags">${o.tags.map(g=>`<span>${esc(g)}</span>`).join("")}</div>`:""}</article>`}
+function rl(y,main,sub){return `<li><span class="y">${esc(y)}</span><span>${esc(main)}${sub?`<small>${esc(sub)}</small>`:""}</span></li>`}
+function render(){
+  document.documentElement.lang=lang;
+  document.querySelectorAll("[data-i18n]").forEach(el=>{const v=T[lang][el.dataset.i18n];if(typeof v==="string")el.textContent=v.replace("{n}",PUBS.length)});
+  $("theme").setAttribute("aria-label",T[lang].theme);
+  $("lang").value=lang;
+  renderLangs();renderSkills();renderFilters();renderPubs();renderJobs();
+  $("edu").innerHTML=EDU.map(tl).join("");
+  $("proj").innerHTML=PROJ.map(card).join("");
+  $("matgrid").innerHTML=MATS.map(([f,items])=>`<div class="matfam"><h4>${esc(L(f))}</h4><div>${items.map(i=>`<span>${esc(L(i))}</span>`).join("")}</div></div>`).join("");
+  $("indproj").innerHTML=IND.map(([g,items])=>`<div class="indcol"><h4>${esc(T[lang][g])}</h4><ul>${items.map(([t,tag])=>`<li>${esc(L(t))}<small>${esc(tag)}</small></li>`).join("")}</ul></div>`).join("");
+  $("revs").innerHTML=rl("08/2026","Reviewer Recognition, Applied Physics A","Springer Nature")+rl("",T[lang].rev_main,"MDPI (Materials) · Springer · Elsevier · Wiley");
+  $("awards").innerHTML=AWARDS.map(([y,a,b])=>a.en==="__MDPI__"?rl(y,T[lang].mdpi_award,T[lang].mdpi_sub):rl(y,L(a),L(b))).join("");
+  $("confs").innerHTML=CONFS.map(([y,k,t])=>rl(y,L(k),t)).join("");
+  $("certs").innerHTML=CERTS.map(([y,t,i])=>rl(y,t,i)).join("");
+  $("mems").innerHTML=MEMS.map(([y,t,s])=>rl(y,L(t),s?L(s):"")).join("");
+  $("prep").innerHTML=PREP.map(t=>`<li class="pub"><span class="yr">${esc(T[lang].prep_l)}</span><div><div class="t">${esc(t)}</div></div></li>`).join("");
+  $("tests").innerHTML=TESTS.map(([y,t,sb])=>rl(y,t,sb)).join("");
+  $("patents").innerHTML=rl("06/2021",T[lang].pat_main,"An artificial intelligence (AI) based system for user classification and identification for providing reward to user, and method thereof")+rl("12/2020",T[lang].copy_main,"“Dadaji Aap Bahut Yaad Aate Ho”");
+  const soc=(full)=>SOCIAL.map(([n,u,k])=>`<a href="${u}" target="_blank" rel="noopener" title="${esc(n)}" aria-label="${esc(n)}"><svg viewBox="0 0 24 24" aria-hidden="true">${ICON[k]}</svg>${full?`<span>${esc(n)}</span>`:""}</a>`).join("");
+  $("social-hero").innerHTML=soc(false);$("social-contact").innerHTML=soc(true);
+  $("workshops").innerHTML=WORKSHOPS.map(([y,t,o])=>rl(y,t,CT(o))).join("");
+}
+
+/* Language: #it / #fr link > saved choice > browser language > English */
+function pickLang(){
+  const h=(location.hash||"").slice(1).toLowerCase();
+  if(LANGS.includes(h))return h;
+  try{const s=localStorage.getItem("ns-lang");if(LANGS.includes(s))return s}catch(e){}
+  const prefs=(navigator.languages&&navigator.languages.length?navigator.languages:[navigator.language||"en"]);
+  for(const p of prefs){const c=String(p).slice(0,2).toLowerCase();if(LANGS.includes(c))return c}
+  return "en";
+}
+lang=pickLang();
+$("lang").addEventListener("change",e=>{lang=e.target.value;try{localStorage.setItem("ns-lang",lang)}catch(_){}render()});
+$("filters").addEventListener("click",e=>{const b=e.target.closest("button[data-f]");if(!b)return;filter=b.dataset.f;renderFilters();renderPubs()});
+
+/* Theme */
+const root=document.documentElement;
+try{const th=localStorage.getItem("ns-theme");if(th==="light"||th==="dark")root.dataset.theme=th}catch(e){}
+$("theme").addEventListener("click",()=>{
+  const cur=root.dataset.theme||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");
+  const next=cur==="light"?"dark":"light";root.dataset.theme=next;try{localStorage.setItem("ns-theme",next)}catch(e){}
+});
+
+/* Contact form: sends through FormSubmit when the page is hosted on the web */
+$("cform").addEventListener("submit",async e=>{
+  e.preventDefault();
+  const st=$("cf-status"),btn=$("cf-send");
+  const email=$("cf-email").value.trim(),msg=$("cf-message").value.trim();
+  if($("cf-honey").value)return;
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)||!msg){st.dataset.state="err";st.textContent=T[lang].cf_invalid;return}
+  btn.disabled=true;st.dataset.state="";st.textContent=T[lang].cf_sending;
+  try{
+    const r=await fetch("https://formsubmit.co/ajax/ntnsoni7@gmail.com",{method:"POST",headers:{"Content-Type":"application/json","Accept":"application/json"},
+      body:JSON.stringify({name:$("cf-name").value.trim(),email,_replyto:email,_subject:"Portfolio: "+($("cf-subject").value.trim()||"New message"),subject:$("cf-subject").value.trim(),message:msg,_template:"table"})});
+    const j=await r.json().catch(()=>({}));
+    if(r.ok&&String(j.success)==="true"){st.dataset.state="ok";st.textContent=T[lang].cf_sent;e.target.reset()}
+    else{st.dataset.state="err";st.textContent=T[lang].cf_err+(j.message?" ("+j.message+")":"")}
+  }catch(_){st.dataset.state="err";st.textContent=T[lang].cf_err}
+  finally{btn.disabled=false}
+});
+/* Copy email */
+$("copybtn").addEventListener("click",()=>{
+  const b=$("copybtn"),done=()=>{b.textContent=T[lang].copied;setTimeout(()=>b.textContent=T[lang].copy,1600)};
+  const sel=()=>{const r=document.createRange();r.selectNodeContents($("email"));const s=getSelection();s.removeAllRanges();s.addRange(r)};
+  try{navigator.clipboard.writeText("ntnsoni7@gmail.com").then(done,sel)}catch(e){sel()}
+});
+render();
+</script>
+</body>
+</html>
